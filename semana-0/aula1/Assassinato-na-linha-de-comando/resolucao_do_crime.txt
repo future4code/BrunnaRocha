@@ -1,0 +1,986 @@
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~
+$ cd Desktop
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop
+$ cd Future4
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4
+$ cd aula01
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01
+$ cat inicio
+cat: inicio: No such file or directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01
+$ cd assassinato-na-linha-de-comando
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+$ pwd
+/c/Users/Eliseu/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+$ cat inicio
+Aconteceu um assassinato na Cidade do Terminal, e a polícia precisa da sua ajuda.
+
+Para descobrir o culpado, vá até o subdiretório "misterio" e comece investigando
+por lá.
+
+Você provavelmente vai querer começar analisando todas as pistas que foram
+encontradas na cena do crime (arquivo "cena-do-crime").
+
+Os policiais que analisaram a cena foram bastante detalhistas e colocaram, neste
+arquivo, TUDO que encontraram.
+
+Felizmente, o sargento analisou o relatório e marcou as pistas reais com a
+palavra "PISTA", em maiúsculas.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+$ ^C
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+$ cat inicio
+Aconteceu um assassinato na Cidade do Terminal, e a polícia precisa da sua ajuda.
+
+Para descobrir o culpado, vá até o subdiretório "misterio" e comece investigando
+por lá.
+
+Você provavelmente vai querer começar analisando todas as pistas que foram
+encontradas na cena do crime (arquivo "cena-do-crime").
+
+Os policiais que analisaram a cena foram bastante detalhistas e colocaram, neste
+arquivo, TUDO que encontraram.
+
+Felizmente, o sargento analisou o relatório e marcou as pistas reais com a
+palavra "PISTA", em maiúsculas.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando
+$ cd misterio
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" cena-do-crime
+PISTA: A filmagem do caixa eletrônico está embaçada, mas mostra que o suspeito é um homem alto, pelo menos 1,83m de altura.
+PISTA: Encontramos uma carteira que provavelmente pertence ao assassino. Nenhum documento de identidade, apenas alguns trocados e carteirinhas dos grupos AAA, Delta SkyMiles, biblioteca e do Museu de História do Bash. Impossível rastrear as carteirinhas, e nenhuma delas possui nome, por algum motivo.
+PISTA: Interrogamos o garçom da cafeteria próxima à cena. Ele disse que uma mulher saiu da cafeteria logo antes de ouvirem os tiros. O nome dela era Annabel, tinha cabelo loiro curto e um sotaque da Nova Zelândia.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" cena-do-crime
+PISTA: A filmagem do caixa eletrônico está embaçada, mas mostra que o suspeito é um homem alto, pelo menos 1,83m de altura.
+PISTA: Encontramos uma carteira que provavelmente pertence ao assassino. Nenhum documento de identidade, apenas alguns trocados e carteirinhas dos grupos AAA, Delta SkyMiles, biblioteca e do Museu de História do Bash. Impossível rastrear as carteirinhas, e nenhuma delas possui nome, por algum motivo.
+PISTA: Interrogamos o garçom da cafeteria próxima à cena. Ele disse que uma mulher saiu da cafeteria logo antes de ouvirem os tiros. O nome dela era Annabel, tinha cabelo loiro curto e um sotaque da Nova Zelândia.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" pessoas
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" ruas
+grep: ruas: Is a directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "1.83" automoveis
+Altura: 1,83 m
+Altura: 1,83 m
+Altura: 1,83 m
+Altura: 1,83 m
+.
+.
+.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel" automoveis
+Proprietário: Oluwasegun Annabel
+Proprietário: Annabel Church
+Proprietário: Annabel Sun
+Proprietário: Annabel Fuglsang
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel: 1.83m" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Oluwasegun Annabel: 1.83" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel Church: 1.83" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel Sun: 1.83" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel Fuglsang: 1.83" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ cd associacoes
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" AAA
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" Biblioteca-da-Cidade
+grep: Biblioteca-da-Cidade: No such file or directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" Biblioteca_da_Cidade
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" Delta_SkyMiles
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" Museu_da_Historia_do_Bash
+grep: Museu_da_Historia_do_Bash: No such file or directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "PISTA" Museu_da_História_do_Bash
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ cd ..
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "PISTA" pessoas
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ tail pessoas
+Lukasz Dudas    M       58      Travessa Birchcroft, linha 247
+Virginie Medina F       27      Rua Waldorf, linha 143
+Andriy Hrachov  M       16      Bantry Way, linha 299
+Ziwei Braas     F       70      Travessa Lyne, linha 168
+Hector Moutoussamy      M       66      Avenida Muller, linha 110
+Xiaodong Dulko  F       69      Travessa Homewood, linha 242
+Ivan Radu       M       29      Vila Clinton, linha 181
+Christopher Sadauskas   M       86      Rua Lancaster, linha 47
+Lizeth Coertzen F       58      Rua Greenock, linha 402
+Alexander Heffernan     M       43      Rua Oleander, linha 147
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ head tail pessoas
+head: cannot open 'tail' for reading: No such file or directory
+==> pessoas <==
+***************
+Para ir até a rua em que uma pessoa mora, utilize o arquivo com o nome da
+rua, localizado no subdiretório "ruas".
+
+Para bater na porta da pessoa e investigar, leia o número da linha retirado
+deste arquivo.
+
+Se o conteúdo de uma linha não fizer nenhum sentido, você está na linha errada.
+***************
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel" pessoas
+Annabel Sun     F       26      Vila Hart, linha 40
+Oluwasegun Annabel      M       37      Rua Mattapan, linha 173
+Annabel Church  F       38      Vila Buckingham, linha 179
+Annabel Fuglsang        M       40      Rua Haley, linha 176
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ cd ruas
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ tail Rua_Haley -n 40
+amputate monsoon downtime dripped sinew bewilders healthily
+paperboy dewlap weakly wolfs dunging
+expanse humanizing monoliths bode
+wagons widgeons plagiarists pumas snorer lovelier failed
+repertory liberating involved
+unfasten sweeping larking zinger
+skeins impersonal old whistled wrongful above arm disgorged
+follow naiver errands muffins appellations bearers subtitle
+dissertation seesawed visitor
+replay possums burglarized milling leaner unbelief advertisers
+nonmalignant hoodlums interlarded daintily
+snarl linoleum sunfish raze axes
+outfoxing sheepfold shrapnel autism diapers defender seasoned
+guarded billeted braving supported hurdled agreeably
+kindred prosier airway rodeo happiness babysat premiers
+niggard goldener sleeveless gabble dilated foxholes tenderhearted
+legates disappearing submersible disagreed
+maggots retrograde immigrants inferiority toupees joggle
+bequeath wrens maturities overpopulating
+endangering unvarying unholier heterodoxy enfolding inauguration
+exonerated totalities pony potbellied
+seepage redheads soundproofing woodwind sadder bottle
+godparents holder gemstone golf shear
+rangiest partials islands dossiers
+straggler demented glides dehumidifies
+waylaying parenting rendering linemen strife assassinating
+survivors voluptuous inquiringly hesitation
+armadillos flavoring restate epoxy laggards
+roomed garrulous underlines fibber kindnesses
+ham palatals tornado seeps dolled sequoia
+demographers wielding humor brawlers suburbanites
+tots depraving unsaturated exasperates kidney gingerly piety
+manliest repenting hydroplaned
+bronzed borderline stokers falser flops tarot query
+slip gneiss boles patron slue laypeople works heralded
+overburden disembarks babyhood doffing management vainer
+trouper wrought philosophy dishwater
+paranoia yelps leases thoughtfulness
+beryls thallium unequally removable
+gig summoner delights sundering intermission
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ tail Rua_Haley -n 10
+demographers wielding humor brawlers suburbanites
+tots depraving unsaturated exasperates kidney gingerly piety
+manliest repenting hydroplaned
+bronzed borderline stokers falser flops tarot query
+slip gneiss boles patron slue laypeople works heralded
+overburden disembarks babyhood doffing management vainer
+trouper wrought philosophy dishwater
+paranoia yelps leases thoughtfulness
+beryls thallium unequally removable
+gig summoner delights sundering intermission
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ head -n 176 Rua_Haley
+fruitfulness exposition lieutenant
+fights willowier earwig tankard soak smokeless
+indulgently layered megalopolises unitary
+uninhibited jive entourages transplanted manful sniggers
+skywards bloodlessly gonged poxes ass
+normalize uppermost lean pursing queuing
+wiggly pram stoplights show prattles
+finishers veneers stems lax progressives spaying
+dysentery standby sighted refrained infinitive vied tins
+resents vowel honeybees trekking swaggers subleased
+bluntly similarities bone barbing
+outwore groom nitrating smashing regularizing blest
+repaint gigahertz absent mankind gust informative
+duding flags washboard bleeder enemy attendants
+travellers rasping throatily residues darning
+gooseberries opportunism spearing notepaper
+flashily inlays lorry blandishment onion begrudging
+smoke midwife orphanages asterisk east intuitive
+outwit subsystems serf undue irregularly deadest strangle
+sheathes sandstorms unrelentingly hippest
+invaders queasier unmans stoppage slavers
+illnesses shirring spooled kingliest japing
+figurine snowmobiling aprons
+demerits appease biweeklies sort
+dabbler slumbrous franking reversible
+abrogate mushier bantamweights foreboding forlornly
+automates bobsleds hallmarking biosphere
+disgorging trumpet peafowls ballads unsnarl
+reimposed admixtures squeak mainstreams admissions tenable
+renumber amputating surgeries mirthfully betides
+enumerable trebled quids evoked timetabled visage extenuates
+desegregation hairbrush itinerants lope eyelid
+raffia stared blustering ravines outlives
+granulating yeoman shutdown poetesses integrity tawdrier
+misspells beefs bassoonists followings lefter
+restart retorting gel stye identifies yen meeting
+priesthood torturers textbooks bottomless straying
+fairness pompons grizzly nay inquirers yawing
+tribe doughtiest undulated joshed hes renames phobia indenture
+lip fork spoil doggoneder togs refugees ameliorating
+ignored babysitting trapezoids woofed expelled path
+stabler propagandists lobbing
+tubes singulars lineament anthropomorphism
+innovator tatting wastebaskets toiletry silhouetted
+unsafest formulae wayfarer preserved spyglasses
+transmittable wadis shoved emeritus disagreed grassy teetotallers
+merely opined westernize portions frame garnishee unlearning
+sunned blameworthy lusting defaults livable flour shelter
+dieseling ashamed messiah monsignori
+wispiest luster bagpipes languish vapors poliomyelitis
+wizard odors marquise bun taffy papyruses splodge upended
+tire housewife rustproofing breeders outings
+handballs sweetest digit lipread breast
+rupee tromped servile hobs finalizing swattered
+savored indorsing starred eruditely leopard
+allergens disingenuous duvet spiffiest
+dragonfly ghost hafts quarries austerer sudsier outdoors
+anneals embezzling eventually biopsy unearthly lastingly
+stutters illuminations pompons lax banjoists
+duped dishonest winsomely boggled ferrule pirates
+slowing stoppers tomahawks rendezvous
+graving serviettes libidinous
+feasting arrival raiding bogus
+virility karat governments dressings
+defeatists rearranged insureds kills huh raggedly shoeshines
+winsomer hands philosophized leakiest
+phonographs job dapples regulates dynasties
+intrusions pointlessly reawakening
+loss megahertzes languidly redevelop aspire northeasterly
+manatee rewind expediters whisked snidest
+bud withholds barbell libations
+sager potholders lineaments varnishing
+redoubt tyrannizing disbanding plagiarisms
+vegetated entrapping mimeographs pantheists diversions
+organdie addling frowzy phonologists overpopulates punting
+riddles preregisters tushes splats
+manipulates grades professions terrorizing
+fingerprinting studentship irritably biopsying
+snuffboxes interwove storing beat gorse livability
+magnolia testis flippest dismembering immersed
+foundries warrior transshipment edger shortsightedness
+bovines wigwags tripos imperial ghosts noteworthy stake
+remaindered slathers majorette persist rankling
+meringues impropriety moneymakers lateness allegros opaquer
+airworthier tipple vulture whimsey moral slipknot
+outstations steals polarizes
+anteaters landholder filibuster pimples nonstop
+indeterminately waggled toffies jigsaws
+seemliness murky homegrown zippered
+ode parleys filmy misunderstood enormousness represented
+rivalling obsequy herons pantries
+beeves potful belts generous malteds
+nostalgia epitomizes gardenias quaffs birthrights lawfully
+variety populist reprograms snippier
+swinging bias fend rottenness kenneled overviews lather
+deportation stove untrustworthy jamming languished
+flattering papyri stunningly treadling bruskest
+presaged shims greases around ditties
+eliminate disorientation floorboard insubstantial shopworn
+immolates wadding dirtier dears dairy speeding leapfrogged
+segued disadvantageously wondrously junkers
+lindens deathlike thrived rhombus
+hoariest subtitle emotionalism j baton
+quirkier peninsula rerunning nub wildernesses belligerent
+presidential wane barbarities
+undershirts happiest resorting rhapsodize admonishing
+garnishing penguin bosoms liquifies
+systematizes flowerbeds fro murk
+explosives wiggle nailbrushes integers ministrant
+bragged masterstroke opaqued sojourn
+splatter displayable alleviating
+tepee fryers remitting luridly kindnesses
+supplier residents manhandling thrives worldwide mashing
+foully gentling printable affix flywheel
+bend deadlier weird volatile peas idealism
+serener guaranteeing bigness voluptuousness
+skateboarding propagandize waists
+boondoggle vignetting nigher
+unsatisfied straggled sternum reupholstered
+snidest frostbite flowerpots
+devious misinterprets embalmers
+hampers weatherize terrestrial golf djinn
+bobsledding flakier mademoiselles
+sunbathed hospitals donors pigskins
+violet afforested augmented perversion byelaws
+turret slithers grasping tithed vegetates intermittent
+shields subteens kneeing disemboweling
+denominations genuineness somnambulist ornateness applying
+shovelled lobbed brutish slipperiness
+sexton vestry hordes splutter levelness
+digit devaluation mishandles straggler
+sorghum administers mads pirated plastering
+impending bleed selling vesting heightens disarranges
+biding frozen nerdier nary polls undertones drouth trainee
+wallboard savant longevity tannery volunteers glazing
+postulating periling legit highfalutin singer imply dive
+repudiations railings heroins subbing bookstores
+strewn herds sneezes bogy hullabaloos
+regrettable ministry levitates sewed aides rounder
+shadowy enlist damper exterminates zaniness
+tribunals insensitivity brakeman pungent
+gathered fostering reproofing terminuses brutally
+blotting riven wildfowls emendations pedestals
+satisfies deformations gooey propellant z make philander
+apparition pilferers postponed solemnity equipages
+drizzlier boomed peephole devout bungling ossifies
+forlornly aptitude subterranean spyglasses dyestuff printouts
+inverses dittoes rho gauzy forger bluest unknown fizzed surname
+pointiest addressing deters jumbling pedalling sharpen
+plush guttering letdowns babes debilitates bents misgoverned
+wowing jolted voodoos mynas auto plastering nuttier iterations
+homier obdurate houseboat revised pursuing
+mule drably mousiest urinal shrimped ermine boosts
+humorless salesmen hale generations fogbound fireside normalization
+heroins donor birthmark loaner loiterers amanuenses
+materialized luminosity supplied transposes salvage
+shrinkage meantime esplanade piano requested platypuses
+mu alder habituating slit waddles making
+handy nearest unashamedly fears propeller metastasis
+handrails stupor greasy entity veer reissuing maximum
+tarred merrymakers spearheading
+northeaster melons babysitting sheds
+vexes disability royally uproariously
+adulterating magneto nonhazardous torques
+postmortems binomials extensiveness
+shallows sultanate infiltrated buttoned nested dramatized
+guerrilla footballer bondsmen
+emanating enrages ruse howling strode
+babiest throb folks bronzing deafen
+irrigated millipede sweetbreads foulest
+luaus skipper relearning navigability
+lying befog reformulates transfigure
+dossier lineage tubed laid rattle headstrong
+pinto simile fuzing pestering neutralized atriums daunted
+irradiates liquidates flimflams dispossessed
+LEIA A ENTREVISTA #871877
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ tail Rua_Mattapan -n 173
+blarney arouse pile onion narwhal thrust ringside
+tiffing elegant fisherman marring sophist aeries implores
+justifiably barfs about outfielders titmouse
+alibi sprout guesstimate oxford diking rasped emporium
+parallelism duller submissions infield prefab uninitialized
+resignedly equipment frightful fixes housefly leanings
+boulevard releasing belle blurred wiriest
+swiveling adjoining whispers
+furbelow promotes gentian adamant
+proportions disheartened holy profiting jape loin
+detriment wired midday imperatives envious
+outsell notable halting maximum stillbirth area
+hereupon operatives blabbed mantel ultras
+haberdashery edits regarded quandary plum diaphragm
+tares duelled maturation with hardy infuriate
+barometers breadwinners sepsis internist
+operating loftier podiatrists
+stammered grotesquely superfluous noblewomen
+tastelessly waved infinitely populated available
+unearned roles lumberyard swilled
+trashiest beefiest openest anions apprehend plunk mettle
+yeastier seating baling mistake tablespoons
+disgusting stings saddening mealiest requisite
+learns amassed steams vizor nerve liefer
+huffiest towheads appellation inking managerial
+forgery tile potatoes refrigerates improvident
+virulently sapped haemophilia verandahs
+purported index galleon stratify equestrians
+salivates overlapping satellite abstain
+inflexibility matte drubs misrepresentation
+impassivity resisters doldrums fouls quitted rarest
+polygon nutritionists betrothals nonrepresentational
+dishtowel ban boobing tremulously rattan present inhabitants
+initiates sanatoriums propound marathon nematode
+impostor antennas hearers strophe exhausting
+prowls gentlewomen sofa viewpoints
+trombones rebuilt grinding obviously birdbrained
+enemy request steamier blues anymore hustlers somebodies
+pamphlets lusted flusher unregulated fastidious
+dashboards passbooks nourish dentin preparation
+superhighways slanting frank fingerboard
+pennies sorely orthography popinjays outpatient drooping
+realities growl angioplasty worshipped
+panted patellae murk rheas sheltering migrating
+underprivileged stiletto lavished
+LEIA A ENTREVISTA #9437737
+waysides relays harmonizing nipping verifiable mongrel
+oddities reunify shooting uneaten stumped busboy wending
+plied selvage adhesion mammals hods hunting unilateral unmannerly
+heals peddlers dendrite retrieve superintend
+ogle guesstimated fiends smiles hapless
+obsessive exiguous oxygenated joshing tenpin whizzes snappers
+hubbub attuned profiteers appeasing tenser barrelled
+penologist shoplifters kneeing
+expatriation fender befriend salon eggshells dynamites
+games pantsuits liberal kaftan posh
+turgidity glop transfixt subleasing
+withdraws sawmills purring heft emanation skirmishes
+mane glazed masterstroke unemployed
+edgeways postmistresses darken
+identity superpowers stakeout treks infantrymen
+targeted southern squirrels dumpier moisturized
+diminutives rabid thralldom parade
+ghastly alloy kin regards pasted napalm
+removers emails bet adverser healed formals abraded
+balked meaner stammered rendezvousing nourishes
+prevail mottled stuffily birthrate looneys
+symbiosis pulp stealth enslaves organizes thus nationalize
+tailpipes zoologist fields shampooing ridge rewarding
+hikes furnished welling oxidizer penlight
+flying life wagging veneer frequent vulvas motormouth
+heralded gaffes revelers bellowing
+forearming disturbs squirrel resuming
+inveigh mail starfish warrantied magnolia gases
+barber morals louses propane ghettos ohms notify
+mournful jessamines existent fountains
+dehumanizes theory gilt wing masturbated
+squeezer bypass remembering dodo
+trifling radiators saints rainbow envy rapid
+semaphore hyperventilation thoughtfulness lugged
+integers sneeze transfers hydrangeas
+disdainfully legalese amendments evasively bowled idealize
+restauranteurs temperas expedients
+healthily foreshortens prefix flogs sniffs disappointed
+mails kinfolk guessing entrust roundelays neatness taste
+tailpipe immunology repenting hospitalizes slapped
+splinting beats redundant slow minxes leafy sallied
+gill profits maximally fathering sausage vandal improbability
+fodders disestablishes observational
+vetted surrealism epithets diva dowels sisters
+employing swellhead gawking assimilated parsons buttes
+weightier jested resonators guard fringes
+tridents erudition imagined misstep manuals
+brassier stills dimwitted limper asp burrowed
+ribbing relieving outsets impelled puppy marinading
+shortness innuendos parented uproar orthodontists offer
+mutilating bevelled disambiguation meanings softest
+mistakes extant undefined boil doping souvenirs
+regurgitating legging intrude veer reworking
+paymaster halted sobriquets thoroughly flogging
+auk investors transmigrate bayberry rummaging
+bidden dairymaids mindbogglingly given enlargement
+presented platitudes aborted autopsy hydroplanes
+feathery yammer jelled hookworm blowsy
+hoariest surveyors disport humongous trombonist
+inhibited misdemeanors identity bighorns
+fishing embroidering muted boilings
+reeds reliable pup layoffs harbinger syntax assured
+dabbler heatstroke pixels sturgeons seedling spryer
+administratively shrived airheads aloe swearers
+strewing institutionalizes toured
+grief disseminates spewed likewise deadbolt
+extinguisher tasseled hump fluting unworthiest beehives
+divvying arranger grilling operable individualizes outlandishly
+doom shutout gentlewoman fire spotted
+ambassadorial false pillowing philanthropies
+gunfire awesome inform plagiarisms
+disavows restlessly timbered downfalls dryers tufts
+adoration mulatto brag betrayers unforgiving
+strove firefights fiefs dishpans visualizing paralyzes
+boondoggle plighted phones debark tine zealots seasoning
+ginkgos stolid law grapnel partisan grilled brassiest
+theft palisade astonish instrumented outlasting regimental
+waterfalls irreparable masterful anodes sabre gizmo marrying
+sovereigns glutted salter wisest
+purified disbars hindquarter disturbing
+honorary mammary belting miners
+remarry shiftless goals influential impairments sanserif
+guttered tops gingkoes nettles justifying
+obsesses lingers somehow wow genitive
+frizzled surrogates involuntarily bisque underwriter bungs
+starfishes foxing key gatherings brittler
+spindles roadbed nonabrasive sit fellowships reloads
+surfeits releases anted strangulating heedless alighted
+rodents bushings doggoner gulped
+gruel fores nervy dribbling blearily stare shill engineering
+autonomous overage motherboard ordinarily detoxes unsnarl
+inflamed nozzles ritualism slaw gossips positions
+filmy diapered straightest planetary hurling wavered
+roadbeds restored borne swards ego isinglass
+digestion foaming formalization devotionals nastier
+equitable subordination savaging firetraps queening
+staffed spume mellifluous primeval
+takings movingly unvarying mantilla
+listings lithographing lore diabetes bettered terns
+straighten guiltiest oilfield sandiness semifinal minim
+roosters plowshares obliged downpour
+prostituting rounds exhalations astonish imbibing overspends
+spluttered removes temporizes beefier limbers ahead deposited
+detonate uprooted measure irradiate flu bespoke
+protestations ledge ranted housefly maunder unloading
+amplifiers sobriquet warbling raffia
+nervelessly fogeys hostesses obsessives maharanees roistering
+reread swivelled nods gaged tuneful bustles
+egregiously densest industrialism goosed intruding meaner
+patrimonial meadows stir held affirmatively nurses
+pestered expounded platitudes spares subpoena
+baronesses punier mainframe hater invulnerably
+rainmakers perpetuals banishment layovers overran tumbler
+enterprising mongered meatballs egoism radios
+sake heritages meows shortages billets hovering restraints
+risen needed gazebo tribulations watersheds kebab
+stabler epistle funkiest bottoming ruminates smokehouses
+transshipment repleting fatherhood
+moderating fulled payrolls beguiling
+loot puttying blaring maharishi aloes intermarries
+bouillon hookworm enamoring guides grovelers abrogating
+profiting evolutionary yakking
+outfoxed unmistakably sounds
+lets interpreter apart job tidbit riming
+these weep rookeries bumpers overhanging
+look residential swampy doggy purposefully doubters
+approving linen astigmatisms bike sudsy
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ tail Vila_Buckingham -n 179
+mending envisions gizmos drags finnier wildest
+adder malingerers euphony antiphonal departs spitfires
+hypes dye illuminations disablement
+sender waned bottomless saintlier lades plethora
+shenanigan larynges penguin heatstroke
+steins exiles underestimating guts billet flabbergasting
+sieges flawlessly serialized kippers
+enfeeble weathered bedridden liquidations
+flints winners unfairest damaged
+partnered pilaws hogs pluming avenge
+tanker forwent sag pheromone snowdrifts syphons
+mimes mountaineers exalted disfigure shelves nimble
+flusters derivable potato establishment
+regimen betterment sarape misused balladeer pilling
+besiegers whitens dinky stupid
+kettle borax partnering preppiest
+fisherman dappling mustier fobs figuratively orthopaedists
+jumpiest tundra hybridizing
+inexhaustibly thrower metaphors intones slanted
+insinuated garrison prettifying attests
+stemming shrewdness prigs workweek feebleness abiding distrust
+sternest rowel debater peas adversely enshrouds
+premiss nowhere billion gatherings fetid traded
+misappropriation donations printers
+dethronement holler spurned divisors
+reverts plaza obsequiously permutation
+grandpas tyrants metastases personae hauler eyelash
+outrage shelters soured surlier metronome moonlighted
+mailmen maneuverable mattered seeding dehumanizes
+spiniest dents weightless kookaburras misprinted disorders
+intermediary selling jersey polymaths empathizing
+doubling peaked owlish byline levitates suspense relabels
+autumns wiping dhotis damming twentieth proportion
+potentate bribes rifer moderate verbena desire framing
+twaddle polite pretext mazourka situated
+bilking darling tempera stresses earmarking
+breezes fretted exhumed fertile
+vineyards gingerbread ridgepoles helixes
+deal heppest malignantly tallest ebony
+flexible espressos prioresses linoleum deposed tourism
+sophomore filtering prostitute wasps
+parboiling sine rain unprofessional
+surrey mudslide brilliants planing derail wilder
+environmentally professor frenzies trolled
+watermelons garrisoning imprisonments typified
+busied besetting founders flurried state trill
+hyphened flashiest advertise byline patrons fighter goldsmith
+sightread teazles footfall washbasin molesting
+grainiest lobbing shrouded largest jump geometries
+eluded sophism stages pertly sewerage biplanes maturer travelogs
+fords plaque droned spars misleading sunburn
+serenely shits dialyses roistering registrars pointillists
+bales napes warts mammary referrals fisherman training
+panting battalion greedier allergens orotund
+headers badge bullhorn agglutinating bearable
+analogs departing anguished nylons
+whitewall napkins overheats embittering grimmer beamed
+LEIA A ENTREVISTA #699607
+festoon dispenser kidder odysseys spoons buttonholing
+arguably manse lessened logging pasts
+holler burg spotlight quadrupeds glitzy froths harmony
+bashfully blotter bushy prettifies
+invent baseness heave flunking temerity
+noose harms grebe attributively ruling
+swat reissues founts envy gingko nuzzled albums
+pippins deathblows hounds voodoo buffed
+politer volunteers overtaxed quoted bakery
+mute jasmine imbues pejorative implementing
+flooded immortal rebuking enthralling
+value bebops brasses mono toileting
+kindle ghostwriter moodier original abridging
+palliation fumbler elapsing marauders honorariums
+invaluable sauntering spuriously phalanx marry plights
+blameworthy bandages gentlemen playboys rosebuds
+norms masterminding milkier demoralization leaven disallowing
+supersedes ambivalent dearness organizational
+sinks resemble noisiest peppy feedbag
+wrapper grotesquely importunity retrograded struggle deviling
+stymie gangrene rapine nevermore digested whirling
+freshets adverbial addles amalgamating forest informants
+motorboats sadism drouths swaggering foursquare ermine
+paperweight pub pitied yearning reeving
+polish penes tortoises immaturity trellis timetabling
+horsehide putting raved meditate inertia thoughtfulness
+savaged saviours disburses tonsil
+bind ruffle mausolea enjoined whiskeys dozen tomato shortsightedness
+hampering artworks jehad manifested
+buffing peeking dart roils omission trumpery
+kippered fruited snuffled unmitigated mansards spies
+dumpster relate meadow hands boardwalk kites
+takeaways goatskins detail ogre spurs
+ruminant piggish fiesta remodel
+nonstop suggester mess wheedles denied enjoyed
+dishtowel ponytail spotlessly barman
+blindest arraignments showroom provably
+manful mandrills gangplanks glandular
+manganese futurities suffragette
+metamorphosis bounders leeriest hyperventilated waterfall
+pitiable tarragons interring drawl
+emotional reexamined revelries slipperier forwarding potentates
+outliving suspending stippled hesitates rosary aliased
+expatriated delivered quintuplets
+razors assortment sparser yews
+relabeled snoop resales hornier berets squeezers
+jinn guttered untreated vegetarian waterspouts
+broadest ashes piquant oftenest nether sheering surrounded
+stewarding tanner foghorn repasts orders
+weer badmouths rape lug utter donkey
+gybing veered rely metering harmfulness bombshells
+peeps regressing pasture skywriter
+proportional trio gelled shivery inferiority
+leaflets pilgrims guileful inflates playfully tarpaulins
+ugh pompons simulate numbers martyr introverts aerie urgent
+stage powering ermine enquire merrier stalker
+undoubted urban illumined flotillas downtrodden gelatine
+abbreviated skiers grumpy attesting gals roil
+synthesizer tared dungarees headlights pluralities module
+preponderating skylarks lawyer swordsmen stupefying motliest
+upstream garnered sprightlier explodes intervenes drawings
+antitrust brandies railroads toenails inveighs
+laded gives quibbler nonplused parliament meadowlarks
+dandled snafu angiosperm hamburgers adverser snowfall
+dogmatism jousts bullshits esquires observable
+request tended reported rhapsody grandstands
+fantasied wonderlands mutually tiptoeing misdeeds
+endue liquidation tinging redistributing
+studied predisposes gauges agenda airfoils
+himself reformation twenty types rotundness file blearier
+jokers sharpest hookahs zinged shutting bestowing
+linkage brothel faggots lisp runway relation harboring
+plurality gazette lively impostures youngest
+refunds supported headroom trekked outtakes interrogation
+fashionable inhibits trumpeting pizazz
+semimonthly shuddering signer roughshod
+epitaphs stales dipper debarment wader
+marinades flashily dispossessed
+segmenting examine appoints granddads molt four monorails
+gibe aspirating vulgarities fetishes lenses
+extroversion vibrantly lubbers kiss haw
+exult enslavement mutuality maturities ousted
+arson hogwash tush bouquets donor disrupting landsliding
+furtively rhapsodies inky laddered wringing rosebud
+limpid hobos shimmering relying
+likewise inquests kid pinnate insignias journeys
+greyed hewing surtaxing hydrology transfigures horded
+suborned whirlpools hobnails aligning agent logotype
+hatefully homeopathy riskiest ilk flagpoles burglarizes
+sundown delphinium normalized
+amnesties trellising rolled misrepresentations
+avast hankerings abominates sloughing
+heartrending bullish removers fraternity dignified
+mettlesome prowlers beautiful manager lollygagged
+suburbs donut gunrunner supports denotes seraphim polyunsaturated
+origination longevity snowballing foretasted sunlight obliteration
+slipping tranquillizers perfumeries
+disaster titled mitigated inseminates populating
+thirsty burros disproved damned validate
+hookworms what magpies weeknight lolls mixing
+dragooning stipple gangway leafletted
+possibles downfall inspire lobbies
+substituted nightshirts delimiters hereof ulna benumb
+hilltops beeped apologizes ties skewed fate
+needles weekending provisioning emended transfusion
+rifer pipers dogfish strafed stereotyped
+junked wooer vaulters sodium dynamism
+looting goodbys tweets uniquer bibulous lodestone
+hospital gnarl fathomless barrings implies manners tunneled
+debasement loathsomeness tabued wraith
+shout shed telepathy reparations filthy brandish
+instrumentalists fatally tattooists anonymity biography
+prostrate refill dreads belaying
+riposted adaptive bawling applauding mushes toileted sleazy
+juggernauts leis downstream dismounts propriety hit
+rite boogies argument shampooed semitone dork
+voluntary ravages draftier purports
+disproves uphold randomized flexes reassures snoopiest
+quadruple hampers assureds blindsides blab pay woodmen motivations
+daydreams jalopy remarking engraves
+quasars delineate blanket unstudied hoax skiff
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ head -n 40 Vila_Hart
+downhills exaggerates outgo rebating rhyming militarizes
+rakishly lithographs inserts
+humanism revolt hoggish tuner hoofs frizziest
+strippers toady framers bakes mandate
+pear graver drubbing reinvest abnormality teetotal lend
+stipulate attiring sprint tunnelings sera merrily proofreaders
+enthroning tuber onrushes pat a rows degrades parleyed
+probationer irresponsibility spongier smirking diminished
+stipulations dandle repetitious enervate
+reunion insert unhand heartbeat busheling teakettles dismayed
+plug hates easiest jabbered destining agglutinates
+ambitious swaggering ties annoyed battleground
+intuitively humbugs ribaldry suspend
+bedspreads expansionists restfullest
+dilated outstrips teapot fluoridates shops mammoth
+baron zoos teeter falloffs fishes invalidating
+patrols knelling rosining lightness unburden
+surfeited absurdity plexus rebuses leaking standing
+sizable punter bagginess dissenters
+postmarking spades overdraft pointillism
+stymie treadles extortionists dietitians agonies spitefuller
+multiplied submits despotism adventurous ballsier
+parody mania leftism tranquilize sexpots stupor parleying
+triumphing whiskered razing danger preordains
+faker preparatory gabbing mavens vamped
+idles tents oratorios butternuts upholsterers sassafras
+damnedest apologists inveigh
+propriety tossed parallelling town kinkier quarantine
+oxymoron nonmembers taproots
+snakebite dramatizing dawdling enlightening
+swastikas fragrant voluble stowing
+grammarian shah ambushed alines varmints doze detains
+wondrous uphold tests appetites wilier beautifiers
+drifts dosages leprosy rashers badmouth jugglers
+snot appals primes whet annular tonality
+shivery kingdom supplements envying
+the slayer gesture waged twenties ratifying baling mortals
+doggie probationary demurer fatness
+stupendous prolonged smog naps
+LEIA A ENTREVISTA #47246024
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ..
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ cd entrevistas
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/entrevistas
+$ tail "entrevista-699607"
+Entrevistamos a Srta. Church às 14:04. A testemunha afirmou que não viu ninguém com as características do atirador e que saiu correndo assim que os tiros foram disparados.
+
+No entanto, ela reportou que viu um carro fugindo da cena do crime. Descreveu como um Honda azul, com placa que começa com "L337" e termina com "9".
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/entrevistas
+$ tail "entrevista-9437737"
+Doesn't appear to be the witness from the cafe, who is female.
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/entrevistas
+$ tail "entrevista-871877"
+Mr. Fuglsang is male and has brown hair.  Not the witness from the cafe.
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/entrevistas
+$ tail "entrevista-47246024"
+A Srta. Sun tem cabelo castanho e não é da Nova Zelândia. Não é a testemunha da cafeteria.
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ..
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ cd automoveis
+bash: cd: automoveis: Not a directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Honda azul" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Placa L337" automoveis
+Placa L337ZR9
+Placa L337P89
+Placa L337GX9
+Placa L337QE9
+Placa L337GB9
+Placa L337OI9
+Placa L337X19
+Placa L337539
+Placa L3373U9
+Placa L337369
+Placa L337DV9
+Placa L3375A9
+Placa L337WR9
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Annabel Church" automoveis
+Proprietário: Annabel Church
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep "Honda Azul" automoveis
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep -A 2 "Annabel Church" automoveis
+Proprietário: Annabel Church
+Altura: 1,65 m
+Peso: 91,2 kg
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep -C 2 "Annabel Church" automoveis
+Marca: BMW
+Cor: Laranja
+Proprietário: Annabel Church
+Altura: 1,65 m
+Peso: 91,2 kg
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep -C 3 "Annabel Church" automoveis
+Placa L2E48EF
+Marca: BMW
+Cor: Laranja
+Proprietário: Annabel Church
+Altura: 1,65 m
+Peso: 91,2 kg
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep -C 4 "Annabel Church" automoveis
+
+Placa L2E48EF
+Marca: BMW
+Cor: Laranja
+Proprietário: Annabel Church
+Altura: 1,65 m
+Peso: 91,2 kg
+
+Placa 8VE37YH
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ grep -C 3 "Annabel" automoveis
+Placa 9R7TTGF
+Marca: Volkswagen
+Cor: Amarela
+Proprietário: Oluwasegun Annabel
+Altura: 1,55 m
+Peso: 108,9 kg
+
+--
+Placa L2E48EF
+Marca: BMW
+Cor: Laranja
+Proprietário: Annabel Church
+Altura: 1,65 m
+Peso: 91,2 kg
+
+--
+Placa 0O27BTD
+Marca: Fiat
+Cor: Amarela
+Proprietário: Annabel Sun
+Altura: 1,53 m
+Peso: 105,2 kg
+
+--
+Placa 20VVU2P
+Marca: Mazda
+Cor: Rosa
+Proprietário: Annabel Fuglsang
+Altura: 1,8 m
+Peso: 109,3 kg
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio
+$ cd associacoes
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ cat AAA
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel Church" AAA
+Annabel Church
+
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel Church" Biblioteca_da_Cidade
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel Church" Delta_SkyMiles
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel Church" Museu_da_História_do_Bash
+Annabel Church
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel" AAA
+Annabel Church
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel" Biblioteca_da_Cidade
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel" Delta-SkyMiles
+grep: Delta-SkyMiles: No such file or directory
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel" Delta_SkyMiles
+
+Eliseu@DESKTOP-NL4ETEG MINGW64 ~/Desktop/Future4/aula01/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep "Annabel" Museu_da_História_do_Bash
+Annabel Church
+Oluwasegun Annabel
