@@ -1,0 +1,27 @@
+body  {
+    background-color: #E0D1B8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6A1221;
+}
+
+header {
+    color: rgb(167, 7, 34, .8);
+    font-style: italic; 
+    font-size: 10px;
+}
+
+h3 {
+    color: rgba(247, 41, 76, 0.8);
+    font-style: italic; 
+    font-size: 15px; 
+}
+
+p {
+    color: #6A1221;
+}
+
+footer {
+    color: #6A1221;
+    font-style: oblique;
+    font-size: 15px; 
+}
