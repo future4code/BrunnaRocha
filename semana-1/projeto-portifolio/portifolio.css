@@ -6,13 +6,13 @@ header ul {
 
 body {
     background: #ffffff;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 body img {
     border-radius: 20px;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     margin-top: 2%;    
 }
 
@@ -36,7 +36,13 @@ body p{
     margin-right: 10%;
 }
 
-body h3 {
+.paragrafoIntrodutorio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.ajusteSkills {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#9C0758;
     margin-top: 10%;
@@ -48,10 +54,52 @@ body li {
 }
 
 body form {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
-    display: block;
-    margin: 10%;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.fotoGitHub {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    margin: 0;
+    width: 30%;
+    height: 60%;
+}
+
+.fotoLinkedIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    margin: 0;
+    width: 30%;
+    height: 60%;
+}
+
+.fotoInstagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    margin: 0;
+    width: 30%;
+    height: 60%;
+}
+
+.fotoFacebook {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    margin: 0;
+    width: 30%;
+    height: 60%;
 }
