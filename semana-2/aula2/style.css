@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    background-color: #FF4136;
+    width: 100vw;
+    height: 100px;
+    padding: 0 20px;
+    margin-left: 120px;
+}
+
+aside {
+    background: rgb(158, 157, 157);
+    margin-left: 0;
+    display: inline-block;
+    align-items: center;
+    height: 300px;
+}
+
+ol {
+    display: flex;
+  }
+
+li {
+    align-items: center;
+} 
+
+.listaUm {
+    flex-wrap: nowrap;
+}
+
+.blocoUm {
+    display: flex;
+    background-color: rgb(30, 12, 197);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    
+}
+
+.blocoDois {
+    display: flex;
+    background-color: rgb(224, 248, 8);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.blocoTres {
+    display: flex;
+    background-color: rgb(12, 197, 12);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.blocoQuatro {
+    display: flex;
+    background-color: rgb(30, 12, 197);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.blocoCinco {
+    display: flex;
+    background-color: rgb(224, 248, 8);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;    
+} 
+
+.blocoSeis {
+    display: flex;
+    background-color: rgb(12, 197, 12);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;    
+}
+
+.blocoSete {
+    display: flex;
+    background-color: rgb(253, 99, 9);
+    width: 50%;
+    height: 120px;
+    padding: 20px;
+    margin: 20px 20px;    
+}
+
+.blocoOito {
+    display: flex;
+    background-color: rgb(253, 99, 9);
+    width: 50%;
+    height: 120px;
+    padding: 20px;
+    margin: 20px 20px;    
+}
+
+.blocoNove {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;    
+}
+
+.blocoDez {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.blocoOnze {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+}
