@@ -19,6 +19,10 @@ body {
 .menuHashtagPai {
     display: flex;
 }
+
+.meioLateral {
+    display: flex; 
+}
   
 .journingGraficosPai {
     display: flex;
@@ -35,7 +39,6 @@ body {
     background-color: #FF4136; 
     display: flex;
     height: 50px;
-    width: 200px;
 }
   
 .barradeBusca {
