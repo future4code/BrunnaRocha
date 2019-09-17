@@ -10,26 +10,26 @@ nav {
     height: 100px;
     padding: 0 20px;
     margin-left: 110px;
-}
+}    
 
 aside {
     background: rgb(158, 157, 157);
     display: inline-block;
-    align-items: center;
-    height: 300px;
+    height: 100%;
 }
+
+ul {
+    height: 100px;
+} 
 
 ol {
     display: flex;
+    margin-left: 100px;
   }
 
 li {
     align-items: center;
 } 
-
-.listaUm {
-    flex-wrap: nowrap;
-}
 
 .blocoUm {
     display: flex;
@@ -38,6 +38,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
     
 }
 
@@ -48,6 +49,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
 }
 
 .blocoTres {
@@ -57,6 +59,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
 }
 
 .blocoQuatro {
@@ -66,6 +69,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
 }
 
 .blocoCinco {
@@ -74,7 +78,8 @@ li {
     width: 25%;
     height: 80px;
     padding: 20px;
-    margin: 20px 20px;    
+    margin: 20px 20px;   
+    justify-content: center; 
 } 
 
 .blocoSeis {
@@ -83,7 +88,8 @@ li {
     width: 25%;
     height: 80px;
     padding: 20px;
-    margin: 20px 20px;    
+    margin: 20px 20px;  
+    justify-content: center;  
 }
 
 .blocoSete {
@@ -92,7 +98,8 @@ li {
     width: 50%;
     height: 120px;
     padding: 20px;
-    margin: 20px 20px;    
+    margin: 20px 20px;   
+    justify-content: center; 
 }
 
 .blocoOito {
@@ -101,7 +108,8 @@ li {
     width: 50%;
     height: 120px;
     padding: 20px;
-    margin: 20px 20px;    
+    margin: 20px 20px; 
+    justify-content: center;   
 }
 
 .blocoNove {
@@ -111,6 +119,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;    
+    justify-content: center;
 }
 
 .blocoDez {
@@ -120,6 +129,7 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
 }
 
 .blocoOnze {
@@ -129,4 +139,5 @@ li {
     height: 80px;
     padding: 20px;
     margin: 20px 20px;
+    justify-content: center;
 }
