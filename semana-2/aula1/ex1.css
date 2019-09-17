@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+.item {
+    color: rgb(37, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuHashtagPai {
+    display: flex;
+}
+  
+.journingGraficosPai {
+    display: flex;
+}
+  
+.signInPai {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: auto;
+}
+
+.logo {
+    background-color: #FF4136; 
+    display: flex;
+    height: 50px;
+    width: 200px;
+}
+  
+.barradeBusca {
+    background-color: rgb(153, 255, 57); 
+    display: flex;
+    height: 50px;
+    width: 800px;
+}
+
+.writeaPost {
+    background-color: rgb(222, 54, 255); 
+    display: flex;
+    height: 50px;
+    width: 400px;
+}
+
+.menuHashtag {
+    background-color: rgb(54, 255, 255); 
+    flex-direction: column;
+    width: 194px;
+    height: 320px;    
+}
+
+.journing {
+    background-color: rgb(225, 255, 54);
+    display: flex; 
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+}
+
+.graficos {
+    background-color: rgb(255, 54, 131); 
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 500px;
+}
+
+.signIn {
+    background-color: rgb(54, 255, 144);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
