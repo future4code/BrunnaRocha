@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    background-color: #FF4136;
+    width: 100vw;
+    height: 100px;
+    padding: 0 20px;
+    margin-left: 110px;
+}    
+
+aside {
+    background: rgb(158, 157, 157);
+    display: inline-block;
+    height: 100%;
+}
+
+ul {
+    height: 100px;
+} 
+
+ol {
+    display: flex;
+    margin-left: 100px;
+  }
+
+li {
+    align-items: center;
+} 
+
+.blocoUm {
+    display: flex;
+    background-color: rgb(30, 12, 197);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+    
+}
+
+.blocoDois {
+    display: flex;
+    background-color: rgb(224, 248, 8);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.blocoTres {
+    display: flex;
+    background-color: rgb(12, 197, 12);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.blocoQuatro {
+    display: flex;
+    background-color: rgb(30, 12, 197);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.blocoCinco {
+    display: flex;
+    background-color: rgb(224, 248, 8);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;   
+    justify-content: center; 
+} 
+
+.blocoSeis {
+    display: flex;
+    background-color: rgb(12, 197, 12);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;  
+    justify-content: center;  
+}
+
+.blocoSete {
+    display: flex;
+    background-color: rgb(253, 99, 9);
+    width: 50%;
+    height: 120px;
+    padding: 20px;
+    margin: 20px 20px;   
+    justify-content: center; 
+}
+
+.blocoOito {
+    display: flex;
+    background-color: rgb(253, 99, 9);
+    width: 50%;
+    height: 120px;
+    padding: 20px;
+    margin: 20px 20px; 
+    justify-content: center;   
+}
+
+.blocoNove {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;    
+    justify-content: center;
+}
+
+.blocoDez {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.blocoOnze {
+    display: flex;
+    background-color: rgb(197, 12, 43);
+    width: 25%;
+    height: 80px;
+    padding: 20px;
+    margin: 20px 20px;
+    justify-content: center;
+}
