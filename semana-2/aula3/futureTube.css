@@ -9,6 +9,8 @@ body{
 header {
     display: flex;
     background-color: #EF843A;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header form {
@@ -20,25 +22,37 @@ img {
     border: solid green;
 }
 
+.photo-placeholder {
+    height: 230px;
+    width: 100%;
+    background-color: blue;
+}
+
 .primeiraSessao {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 40px;
     justify-content: center;
     align-content: center;
+    grid-gap: 10px;
+    margin: 0 20px;
+    margin-top: 40px;
+}
+
+.primeiraSessao div {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiraSessao div img {
+    height: 230px;
     
 }
-
-#primeiraFoto {
-    justify-content: center;
-    align-items: center;
-}
-
 
 footer {
     background-color: #323B3E;
     color: #FFFFFF;
-    position: absolute;
+    position: relative;
     height: 60px;
     width: 100%;
     bottom: 0;
