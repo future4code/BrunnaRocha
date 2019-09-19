@@ -13,19 +13,14 @@ header {
     align-items: baseline;
 }
 
-header form {
-    margin-left: 80%;
+header input {
     margin-bottom: 20px;
+    width: 150px;
+    margin-right: 20px;
 }
 
 img {
     border: solid green;
-}
-
-.photo-placeholder {
-    height: 230px;
-    width: 100%;
-    background-color: blue;
 }
 
 .primeiraSessao {
