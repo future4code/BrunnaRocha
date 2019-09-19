@@ -19,6 +19,21 @@ header input {
     margin-right: 20px;
 }
 
+aside {
+    border-right: solid rgb(137, 145, 148);
+    grid-template-columns: 1fr;
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: baseline;
+    align-content: center;
+    margin-top: 0px;
+}
+
+li {
+    list-style: none;
+}
+
 img {
     border: solid green;
 }
@@ -29,8 +44,8 @@ img {
     justify-content: center;
     align-content: center;
     grid-gap: 10px;
-    margin: 0 20px;
-    margin-top: 40px;
+    margin-right: 0;
+    margin-left: 170px;
 }
 
 .primeiraSessao div {
@@ -41,7 +56,6 @@ img {
 
 .primeiraSessao div img {
     height: 230px;
-    
 }
 
 footer {
