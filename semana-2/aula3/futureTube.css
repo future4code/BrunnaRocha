@@ -58,6 +58,12 @@ img {
     height: 230px;
 }
 
+.sessaoVideos{
+    display: flex;
+    justify-content: right;
+    align-content: space-between;
+}
+
 footer {
     background-color: #323B3E;
     color: #FFFFFF;
