@@ -18,6 +18,6 @@ function creatTask(){
 //     } else {
 //         alert("Não é possível inserir um elemento vazio");
 //     }
-// }
+}
 
     
