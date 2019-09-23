@@ -7,28 +7,16 @@
     <link rel="stylesheet" href="plannerSemanal.css">
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i,700&display=swap" rel="stylesheet">
+    <script src="plannerSemanal.js"></script>
     <title>Brunna's Planner</title>
-    <script>
-      function criarTarefa(){
-        let inputValue = document.querySelector("#novaTarefa").value;
-        
-        let listaDeTarefas = document.querySelector("ul");
-
-        listaDeTarefas.innerHTML += "<li>" + inputValue + </li>";"
-    }
-
-        function checkEnter(event){
-            if (event.key ==="Enter"){
-            criarItem();
-            }
-    }  
-    </script>
 </head>
 
 <body>
     <div class="container">
+        <form action="#" id="task-form">
         <label>Insira uma tarefa:</label>
-        <input type="text" name="novaTarefa" id="novaTarefa" onkeyup="checaTecla(event)">
+        <input type="text" name="task" id="task">
+        </form>
         <select name="diaDaSemana" id="diaDaSemana">
             <option value="segunda">Segunda-Feira</option>
             <option value="terca">Terça-Feira</option>
@@ -39,7 +27,7 @@
             <option value="domingo">Domingo</option>
         </select>
 
-        <button onclick="criarTarefa();">Criar Tarefa!</button>
+        <button onclick="creatTask();">Criar Tarefa!</button>
     </div>
 
     <hr>
