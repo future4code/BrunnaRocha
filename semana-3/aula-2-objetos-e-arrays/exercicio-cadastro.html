@@ -59,11 +59,18 @@
     </div>
 
     <script>
-        function limpaCampo(){
+        function limpaCampo() {
             document.getElementById("nome").value = ""
             document.getElementById("idade").value = ""
             document.getElementById("email").value = ""
         }
+
+        // CRIANDO UMA FUNÇÃO QUE ME PERMITA ENXERGAR OS ALUNOS CADASTRADOS 
+        // function mostraIscritos() {
+        //     document.getElementById("nome").value = ("nome").value
+        //     document.getElementById("idade").value = "idade"
+        //     document.getElementById("email").value = "email"
+        // }
 
         function buscaItem(chave) {
             const valor = window.localStorage.getItem(chave);
@@ -93,6 +100,8 @@
 
         function verInscritos() {
             console.log(buscaItem("aluno"));
+            // ESTA É A CHAMADA DA FUNÇÃO PARA VER OS ALUNOS CADASTRADOS
+            // mostraIscritos();
         }
 
 
