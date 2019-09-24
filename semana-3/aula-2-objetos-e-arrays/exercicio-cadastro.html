@@ -59,6 +59,12 @@
     </div>
 
     <script>
+        function limpaCampo(){
+            document.getElementById("nome").value = ""
+            document.getElementById("idade").value = ""
+            document.getElementById("email").value = ""
+        }
+
         function buscaItem(chave) {
             const valor = window.localStorage.getItem(chave);
             if (valor) {
@@ -82,6 +88,7 @@
            console.log(aluno);
 
            salvaItem("salvarNome", aluno);
+           limpaCampo();
         }
 
         function verInscritos() {
@@ -91,6 +98,7 @@
 
         const UserName = buscaItem("nome");
         console.log(nome);
+        
 
     </script>
   
