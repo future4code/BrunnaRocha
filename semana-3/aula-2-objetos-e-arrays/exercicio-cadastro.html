@@ -66,18 +66,18 @@
             }
             return [];
         }
-        ​
+
         function salvaItem(chave, item) {
             if(item && chave) {
                 window.localStorage.setItem(chave, JSON.stringify(item));
         }
         }
 
-        function cadastrar(){
+        function cadastrar() {
            const aluno = {
                nome: document.getElementById("nome").value,
                idade: document.getElementById("idade").value,
-               email: document.getElementById("email").value,
+               email: document.getElementById("email").value
            } 
            console.log(aluno);
 
@@ -85,7 +85,7 @@
         }
 
         function verInscritos() {
-            console.log(buscaItem("salvarNome"));
+            console.log(buscaItem("aluno"));
         }
 
 
