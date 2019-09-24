@@ -1,3 +1,7 @@
+function limpaCampo(){
+    document.getElementById("#task").value = ""
+}
+
 function creatTask(){
     let inputValue = document.querySelector("#task").value;
 
@@ -6,6 +10,7 @@ function creatTask(){
     let taskList = document.querySelector("#" + selectedWeekDay + " ul");
 
     taskList.innerHTML += "<li>" + inputValue + "</li>";
+    limpaCampo();
 
 
     // TENTANDO FAZER COM QUE NÃO SEJA POSSÍVEL INSERIR UMA TAREFA EM BRANCO
