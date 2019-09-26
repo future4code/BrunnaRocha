@@ -1,30 +1,33 @@
 function limpaFiltro(){
     document.getElementById("valor-da-despesa").value = "";
-    document.getElementById("descrição-da-despesa").value = "";
+    document.getElementById("tipo-da-despesa").value = "";
+    document.getElementById("descricao-da-despesa").value = "";
+    document.getElementById("filtro-tipo").value = "";
     document.getElementById("filtro-valor-minimo").value = "";
     document.getElementById("filtro-valor-maximo").value = "";
 }
 
 class Despesa {
     constructor(casa, viagem, estudo, outros){
-        this.casa = casa;
-        this.viagem = viagem;
-        this.estudo = estudo;
-        this.outros = outros 
+        this.valor = valor;
+        this.tipo = tipo;
+        this.descricao = descricao;
+        
     }
 }
 
-let listaDeDespesas = []
-    function cadastrarDespesa(){
-        const casa = document.getElementById("casa").value;
-        const viagem = document.getElementById("viagem").value;
-        const estudo = document.getElementById("estudo").value;
-        const outros = document.getElementById("outros").value;
+const listaDeDespesas = [];
+        const valor = document.getElementById("valor-da-despesa").value;
+        const tipo = document.getElementById("tipo-da-despesa").value;
+        const descricao = document.getElementById("descricao-da-despesa").value;
         
-        const despesa = new Despesa (casa, viagem, estudo, outros);
+        function cadastrarDespesa(){
+            if(valor === " " || descricao === " "){
+                alert("Oh, Oh! Insira todas as informações!");
+                return;
+            }
 
-
-        console.log("Todos as despesas " listaDeDespesas);
-
+        const novaDespesa = new Despesa (valor, tipo, descricao);
+        console.log ("Todos as despesas ", listaDeDespesas);
         limpaFiltro();
-    }        
+}        
