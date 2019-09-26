@@ -13,28 +13,40 @@ class Post {
         this.imagem = imagem 
     }
 
-    buscaPostFormatado(){
-        const postFormatado = this.titulo + " - " + this.autor + " , " + this.conteudo;
+    renderizaPostFormatado(){
+        const postFormatado = "<div><p>" + this.titulo + "</p><p>" + this.autor + "</p><p>" + this.conteudo;
         return postFormatado;
     }
 
 }
     let listaDePost = []
     function publicarOPost(){
-    const titulo = document.getElementById("titulo").value;
-    const autor = document.getElementById("autor").value;
-    const conteudo = document.getElementById("conteudo").value;
-    const imagem = document.getElementById("imagem").value;
-    const post = new Post (titulo, autor, conteudo, imagem);
-    listaDePost.push (post);
-    console.log(listaDePost);
-    limpaCampo();
+        const titulo = document.getElementById("titulo").value;
+        const autor = document.getElementById("autor").value;
+        const conteudo = document.getElementById("conteudo").value;
+        const imagem = document.getElementById("imagem").value;
+        
+        const post = new Post (titulo, autor, conteudo, imagem);
+
+        listaDePost.push (post);
+
+        console.log("Todos os posts " listaDePost);
+
+        limpaCampo();
+
+        const areaDosPost = document.getElementById("posts");
+
+        // areaDosPosts.innerHTML += "<h1>OIE!</h1>";
+
+        for(let post of listaDePost){
+            areaDosPost.innerHTML += post.renderizaPostFormatado();
+        }
     }
 
-    for(let publicacao of listaDePost) {
-        document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.titulo + "</h1>" + "</div>"
-        document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.autor + "</h1>" + "</div>"
-        document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.conteudo + "</h1>" + "</div>"
-        document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.imagem + "</h1>" + "</div>"
-    }
+    // for(let publicacao of listaDePost) {
+    //     document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.titulo + "</h1>" + "</div>"
+    //     document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.autor + "</h1>" + "</div>"
+    //     document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.conteudo + "</h1>" + "</div>"
+    //     document.getElementById("listaDePost").innerHTML += "<div>" + "<h1>" + publicacao.imagem + "</h1>" + "</div>"
+    // }
 
