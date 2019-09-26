@@ -15,19 +15,22 @@ class Despesa {
         
     }
 }
-
+// CRIANDO UM ARRAY PARA GUARDAR AS DIVERSAS DESPESAS //
 const listaDeDespesas = [];
-        const valor = document.getElementById("valor-da-despesa").value;
-        const tipo = document.getElementById("tipo-da-despesa").value;
-        const descricao = document.getElementById("descricao-da-despesa").value;
-        
+        // CRIANDO UMA FUNÇÃO QUE GUARDA OS VALORES DE INPUT //
         function cadastrarDespesa(){
-            if(valor === " " || descricao === " "){
+            const valor = document.getElementById("valor-da-despesa").value;
+            const tipo = document.getElementById("tipo-da-despesa").value;
+            const descricao = document.getElementById("descricao-da-despesa").value;
+                if(valor === " " || descricao === " "){
                 alert("Oh, Oh! Insira todas as informações!");
                 return;
             }
 
-        const novaDespesa = new Despesa (valor, tipo, descricao);
-        console.log ("Todos as despesas ", listaDeDespesas);
-        limpaFiltro();
+        let novaDespesa = new Despesa(valor, tipo, descricao)
+            listaDeDespesas.push(novaDespesa);
+                console.log("Todos as despesas ", listaDeDespesas);
+        
+            limpaFiltro();
+
 }        
