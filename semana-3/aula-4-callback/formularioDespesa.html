@@ -21,10 +21,10 @@
             <div class="input-container">
                 <p class="label-texto">Tipo (Casa, Viagem, Estudos, Outros)</p>
                 <select id="tipo-da-despesa">
-                <option value="Casa">Casa</option>
-                <option value="Viagem">Viagem</option>
-                <option value="Estudos">Estudos</option>
-                <option value="Outros">Outros</option>
+                <option value="casa">Casa</option>
+                <option value="viagem">Viagem</option>
+                <option value="estudos">Estudos</option>
+                <option value="outros">Outros</option>
                 </select>
             </div>
             <div class="input-container">
@@ -43,10 +43,10 @@
                 <div class="input-container">
                     <p class="label-texto">Tipo (Casa, Viagem, Estudos, Outros)</p>
                     <select id="filtro-tipo">
-                    <option value="Casa">Casa</option>
-                    <option value="Viagem">Viagem</option>
-                    <option value="Estudos">Estudos</option>
-                    <option value="Outros">Outros</option>
+                    <option value="casa">Casa</option>
+                    <option value="viagem">Viagem</option>
+                    <option value="estudos">Estudos</option>
+                    <option value="outros">Outros</option>
                     </select>
                 </div>
                 <div class="input-container">
@@ -58,7 +58,7 @@
                     <input id="filtro-valor-maximo">
                 </div>
                 <button class="botao-filtrar-despesa" id="filtrar-despesa-btn">Filtrar</button>
-                <button class="botao-limpar-filtros" id="limpar-filtros-btn">Limpar Filtros</button>
+                <button class="botao-limpar-filtros" id="limpar-filtros-btn" onclick="limpaFiltro()">Limpar Filtros</button>
             </div>
     
             <div id="despesas-list-container"></div>
