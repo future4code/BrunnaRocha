@@ -19,7 +19,49 @@
 
     // 3.    Nesta função temos três variáveis. A primeira se chama numeros e carrega um array com 14 números distintos entre par e ímpar, a segunda se chama array1 e carrega consigo um array vazio, assim como a terceira quue se chama array2. A função é executada e para cada numero da função numeros, se for um número que o resto da divisão por 2 seja igual a zero, este número será entregue ao array 1 que antes se encontrava vazio, mas se o resto da sua divisão por 2 não for igual a zero, então este número será inserido no array2. Após isso, será impresso no console três informações: A primeira printará a quantidade total de números pegando todo o comprimento do array "numeros", a segunda printará a quantidade de números do array1 e a terceira de igual modo, verificará a extensão do array2 e printará os números. //
 
-    // 4.   Nesta função temos três variáveis. A primeira se chama numeros e segura um array com 25 números distintos entre par e ímpar. A segunda se chama numero1 e seus números é da família dos números infinitos e, a terceira variável que se chama numero2 e recebe o número 0 como objeto. A função é executada epara cada numero da função de numeros, se for um numero menor do que a variável numero1, então este numero será pertencente à esta variável. Se o número for maior do que a variável numero2, então este número fará parte da variável numero2. E será impresso no console as informações da variável numero1 e da variável numero2.//
+    // 4.   Nesta função temos três variáveis. A primeira se chama numeros e segura um array com 25 números distintos entre par e ímpar. A segunda se chama numero1 e seus números é da família dos números infinitos e, a terceira variável que se chama numero2 e recebe o número 0 como objeto. A função é executada epara cada numero da função de numeros, se for um numero menor do que a variável numero1, então este numero será pertencente à esta variável. Se o número for maior do que a variável numero2, então este número fará parte da variável numero2. E será impresso no console as informações da variável numero1 e da variável numero2. //
+
+    // Exercícios de Lógica de Programação //
+
+    // 1. I. While: Significa dizer que enquanto uma condição não for totalmente cumprida, a função continuará exercendo uma volta (loop) até que a condição seja falsa e pare este laço. // 
+    // II. For: Este laço trabalha com incremento, então todas as vezes que ele fizer uma volta, ele vai acrescentar 1, até que a condição seja falsa e pare o laço. //
+    // III. For of: Este é de todos os mais tranquilo e curto, porque ele verifica a informação que foi declarada na variável e atribui à ela os seus valores. //
+    
+    function exercicioLogicaDeProgramacao() {
+        function primeiraFormaDeIterar() {
+            let listaDeAlunos = ["Brunna", "Eliseu", "Klysman", "Luna"];
+            let indice = 0;
+            while (indice < listaDeAlunos.length) {
+                console.log(listaDeAlunos[indice]);
+                console.log("Presente!");
+                indice = indice + 1;
+            }
+        }
+
+        function segundaFormaDeIterar() {
+            let listaDeAlunos = ["Brunna", "Eliseu", "Klysman", "Luna"];
+            for (let i = 0; i < listaDeAlunos.length; i = i + 1) {
+
+                console.log(listaDeAlunos[i]);
+                console.log("Presente!");
+            }
+        }
+
+
+        function terceiraFormaDeIterar() {
+            const listaDeAlunos = ["Brunna", "Eliseu", "Klysman", "Luna"];
+                for (let aluno of listaDeAlunos) {
+                    console.log(aluno);
+                    console.log("Presente!");
+                }
+        }
+
+        primeiraFormaDeIterar();
+        segundaFormaDeIterar();
+        terceiraFormaDeIterar();
+
+    }
+    
     
     
     
