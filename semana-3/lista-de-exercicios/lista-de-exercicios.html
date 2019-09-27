@@ -68,6 +68,18 @@
     //    d) !(booleano2 && booleano3) || !(booleano1 && booleano3) = (true && true) || (false && false).
     //    e) !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3) = (false) && (false) || (true && true && true).
 
+    // 3.   
+            const listaDeNumeros = [83, 9, 82, 15, 22, 44, 51, 13, 44, 22, 2, 6, 0];
+            let numeroPar = listaDeNumeros[0];
+                for (let numeroAtual of listaDeNumeros) {
+                if(numeroAtual % 2 == 0) {
+                    numeroPar = numeroAtual;
+                    console.log("Este número é par: ", numeroPar)
+                } else
+                    console.log("Este número é ímpar: ", numeroAtual);
+            }
+        }
+    }
     
     
     
