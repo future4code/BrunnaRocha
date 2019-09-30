@@ -1,3 +1,8 @@
+html {
+  min-width: 100vw;
+  display: flex;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -19,13 +24,17 @@ header input {
   margin-right: 20px;
 }
 
+#aside-e-section {
+  display: flex;
+}
+
 aside {
   border-right: solid rgb(137, 145, 148);
   grid-template-columns: 1fr;
   width: 150px;
   display: grid;
   justify-content: baseline;
-  align-content: center;
+  align-content: flex-start;
   margin-top: 0px;
 }
 
@@ -40,12 +49,13 @@ img {
 
 .primeiraSessao {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-content: center;
   grid-gap: 10px;
   margin-right: 0;
-  margin-left: 170px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .primeiraSessao div {
