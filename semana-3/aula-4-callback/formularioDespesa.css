@@ -1,0 +1,19 @@
+body {
+    display: block;
+    margin: 8px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-container {
+    border: 1px solid #FF851B;
+    padding: 30px;
+    min-width: 20%;
+}
+
+script {
+    display: none;
+}

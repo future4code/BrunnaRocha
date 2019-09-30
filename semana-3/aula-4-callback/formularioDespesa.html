@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formularioDespesa.css">
+  </head>
+  
+  <body>
+    <div class="main-container">
+        <!-- SEÇÃO CADASTRA OS TIPOS DE DESPESAS -->
+        <section class="custom-container" id="section-1">
+            <h2>Controlador de Despesas</h2>
+            <h3>Cadastrar despesa</h3>
+            <div>
+            <div class="input-container">
+                <p class="label-texto">Valor</p>
+                <input id="valor-da-despesa">
+            </div>
+            <div class="input-container">
+                <p class="label-texto">Tipo (Casa, Viagem, Estudos, Outros)</p>
+                <select id="tipo-da-despesa">
+                <option value="casa">Casa</option>
+                <option value="viagem">Viagem</option>
+                <option value="estudos">Estudos</option>
+                <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <p class="label-texto">Descrição da despesa</p>
+                <input id="descricao-da-despesa">
+            </div>
+            </div>
+            <button class="botao-cadastrar-despesa" id="cadastrar-despesa-btn" type="submit">Cadastrar Despesa</button>
+        </section>
+
+        <!-- SEÇÃO DESPESAS DETALHADAS -->
+        <section class="custom-container" id="section-2">
+            <h2>Despesas Detalhadas</h2>
+    
+            <div>
+                <div class="input-container">
+                    <p class="label-texto">Tipo (Casa, Viagem, Estudos, Outros)</p>
+                    <select id="filtro-tipo">
+                    <option value="casa">Casa</option>
+                    <option value="viagem">Viagem</option>
+                    <option value="estudos">Estudos</option>
+                    <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <p class="label-texto">Valor Mínimo</p>
+                    <input id="filtro-valor-minimo">
+                </div>
+                <div class="input-container">
+                    <p class="label-texto">Valor Máximo</p>
+                    <input id="filtro-valor-maximo">
+                </div>
+                <button class="botao-filtrar-despesa" id="filtrar-despesa-btn">Filtrar</button>
+                <button class="botao-limpar-filtros" id="limpar-filtros-btn" onclick="limpaFiltro()">Limpar Filtros</button>
+            </div>
+    
+            <div id="despesas-list-container"></div>
+        </section>
+        
+        <!-- // SEÇÃO EXTRATO DAS DESPESAS // -->
+        <section class="custom-container" id="section-3">
+            <h2>Extrato</h2>
+            <div>
+            <h3 id="valor-total"> Valor Total: </h3>
+            </div>
+    
+            <div id="lista-do-extrato"></div>
+        </section>
+
+    </div>
+
+    <script src="formularioDespesas.JS"></script>
+  
+  </body>
+  </html>
