@@ -11,10 +11,10 @@ export function Imagens() {
                 <img src={img1} className="img-1" alt="sunshine" />
             </div>
             <div>
-                <img src={img2} className="img-1" alt="parking lot" />
+                <img src={img2} className="img-2" alt="parking lot" />
             </div>
             <div>
-                <img src={img3} className="img-1" alt="Arabic Paparazzi" />
+                <img src={img3} className="img-3" alt="Arabic Paparazzi" />
             </div>
             
         </div>
