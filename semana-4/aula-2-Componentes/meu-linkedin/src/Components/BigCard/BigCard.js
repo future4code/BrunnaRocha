@@ -16,8 +16,8 @@ export function BigCard(props) {
     )
     }
     ​
-    BigCard.propTypes = {
-      image: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      paragraph: PropTypes.string.isRequired
-    }
+    // BigCard.propTypes = {
+    //   image: PropTypes.string.isRequired,
+    //   title: PropTypes.string.isRequired,
+    //   paragraph: PropTypes.string.isRequired
+    // }
