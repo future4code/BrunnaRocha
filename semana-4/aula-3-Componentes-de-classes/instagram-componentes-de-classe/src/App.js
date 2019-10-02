@@ -1,18 +1,19 @@
 import React from 'react';
-import img1 from './img1.jpg';
+
 import './App.css';
+import { Imagens } from './components/Imagens/Imagens'
 
 
   function App() {
     return (
       <div className="App">
         <h3>future4.br</h3>
-        <img src={img1} className="img-1" alt="Brunna" />
+        <Imagens />
+        <Imagens />
+        <Imagens />
         <input id="comentario-btn"
           placeholder="Escreva um comentário"
           type="text"
-          // onChange={this.onChangeValue1}
-          // value={this.state.valor1}
         />
       </div>
     );
