@@ -8,12 +8,6 @@ import { Imagens } from './components/Imagens/Imagens'
       <div className="App">
         <h3>future4.br</h3>
         <Imagens />
-        <Imagens />
-        <Imagens />
-        <input id="comentario-btn"
-          placeholder="Escreva um comentário"
-          type="text"
-        />
       </div>
     );
   }
