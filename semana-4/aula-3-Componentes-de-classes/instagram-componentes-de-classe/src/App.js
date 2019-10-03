@@ -9,7 +9,6 @@ import img3 from './imagens/img3.jpg';
   function App() {
     return (
       <div className="App">
-        <h3>future4.br</h3>
           <div className="postContainer">
             <Post url={img1} />
             <Post url={img2} />
