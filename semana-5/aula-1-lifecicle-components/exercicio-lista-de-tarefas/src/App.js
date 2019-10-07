@@ -1,5 +1,5 @@
 import React from "react";
-import Tasks  from "./components/criartarefa/Tasks.js.js";
+import tarefa  from "./components/tarefa/tarefa.js";
 import styled from "styled-components";
 
 const Container = styled.section`
@@ -7,6 +7,11 @@ const Container = styled.section`
     justify-content: center;
     background-color: white;
 `;
+
+const Cabecalho = styled.section`
+    display: flex;
+    justify-content: center;
+`
 
 class App extends React.Component {
 
@@ -23,17 +28,17 @@ class App extends React.Component {
             <Container>
                 <p>TAREFAS</p>
             
-                <Cabeçalho>
+                <Cabecalho>
                     <span>Em curso</span>
                     <button></button>
-                </Cabeçalho> 
+                </Cabecalho> 
                 <ul>
                 {/* Aqui entrarão as tarefas que não foram concluídas ainda */}
                 </ul>  
-                
-                <Cabeçalho>
+
+                <Cabecalho>
                     <span>Concluídas</span>
-                </Cabeçalho> 
+                </Cabecalho> 
                 <ul>
                     {/* Aqui entrarão todas as tarefas concluídas */}
                 </ul>
