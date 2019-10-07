@@ -5,12 +5,15 @@ import styled from "styled-components";
 const Container = styled.section`
     display: flex;
     justify-content: center;
-    background-color: white;
+    padding: 20px;
+    background-color: orange;
+    height: 100vh;
 `;
 
-const Cabecalho = styled.section`
+const div = styled.div`
     display: flex;
     justify-content: center;
+    height: 20px;
 `
 
 class App extends React.Component {
@@ -26,19 +29,21 @@ class App extends React.Component {
     render() {
         return (
             <Container>
-                <p>TAREFAS</p>
-            
-                <Cabecalho>
+                <div className="titulo">
+                    <span>TAREFAS</span>
+                </div>
+                
+                <div className="tarefaEmCurso">
                     <span>Em curso</span>
                     <button></button>
-                </Cabecalho> 
+                </div> 
                 <ul>
                 {/* Aqui entrarão as tarefas que não foram concluídas ainda */}
                 </ul>  
 
-                <Cabecalho>
+                <div className="tarefaConcluida">
                     <span>Concluídas</span>
-                </Cabecalho> 
+                </div> 
                 <ul>
                     {/* Aqui entrarão todas as tarefas concluídas */}
                 </ul>
