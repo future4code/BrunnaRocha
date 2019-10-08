@@ -1,27 +1,39 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      
+    }
+  }
+
+
+render() {
   return (
     <div>
+      <h1>ETAPA I - DADOS GERAIS</h1>
       <div className="primeiraEtapa">
-        <span>Nome</span>
+        <span>Qual o seu nome?</span>
         <input type="text" name="nome" id="nome"/> 
 
-        <span>Idade</span>
+        <span>Qual é a sua idade?</span>
         <input type="text" name="idade" id="idade"/>
 
-        <span>E-mail</span>
+        <span>Qual é o seu E-mail?</span>
         <input type="text" name="email" id="email"/>
 
-        <span>Grau de escolaridade</span>
+        <span>Qual é o seu grau de escolaridade?</span>
         <input type="text" name="escolaridade" id="escolaridade"/>
-        <ul>
-          <li>Ensino Médio Incompleto</li>
-          <li>Ensino Médio Completo</li>
-          <li>Ensino Superior Incompleto</li>
-          <li>Ensino Superior Completo</li>
-        </ul>
+        <select>
+          <option value="emi">Ensino Médio Incompleto</option>
+          <option value="emc">Ensino Médio Completo</option>
+          <option value="esi">Ensino Superior Incompleto</option>
+          <option value="esc">Ensino Superior Completo</option>
+        </select>
+        {/* <button onClick={this.handleClick}></button> */}
       </div>
 
       <div className="SegundaEtapa">
@@ -46,6 +58,8 @@ function App() {
       </div>
     </div>
   );
+}
+
 }
 
 export default App;
