@@ -48,7 +48,7 @@ render() {
       </div>
 
       <div className="terceiraEtapa">
-        <h1>nformações sobre quem não se formou no ensino superior nem está cursando</h1>
+        <h1>ETAPA III - Informações sobre quem não se formou no ensino superior nem está cursando</h1>
         <span>Por que você não terminou um curso de graduação?</span>
         <input type="text" name="graduacaoincompleta" id="graduacaoincompleta"/>
 
@@ -59,6 +59,11 @@ render() {
           <option value="ci">Curso de inglês</option>
           <option value="ncc">Não fiz nem curso complementar</option>
         </select>
+      </div>
+
+      <div className="ultimaEtapa">
+        <h1>ETAPA FINAL</h1>
+        <p>Obrigado por responder às nossas perguntas! Não se preocupe, entraremos em contato em breve, via e-mail.</p>
       </div>
     </div>
   );
