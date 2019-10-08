@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      
+
     }
   }
 
@@ -14,8 +14,9 @@ class App extends React.Component {
 render() {
   return (
     <div>
-      <h1>ETAPA I - DADOS GERAIS</h1>
+      
       <div className="primeiraEtapa">
+        <h1>ETAPA I - Dagos gerais</h1>
         <span>Qual o seu nome?</span>
         <input type="text" name="nome" id="nome"/> 
 
@@ -36,7 +37,9 @@ render() {
         {/* <button onClick={this.handleClick}></button> */}
       </div>
 
+
       <div className="SegundaEtapa">
+        <h1>ETAPA II - Informações educacionais para quem está cursando (ou já terminou) o ensino superior</h1>
         <span>Qual o curso?</span>
         <input type="text" name="curso" id="curso"/>
 
@@ -45,16 +48,17 @@ render() {
       </div>
 
       <div className="terceiraEtapa">
+        <h1>nformações sobre quem não se formou no ensino superior nem está cursando</h1>
         <span>Por que você não terminou um curso de graduação?</span>
         <input type="text" name="graduacaoincompleta" id="graduacaoincompleta"/>
 
         <span>Você fez algum curso complementar?</span>
         <input type="text" name="cursocomplementar" id="cursosomplementar"/>
-        <ul>
-          <li>Curso técnico</li>
-          <li>Curso de inglês</li>
-          <li>Não fiz nem curso complementar</li>
-        </ul>
+        <select>
+          <option value="ct">Curso técnico</option>
+          <option value="ci">Curso de inglês</option>
+          <option value="ncc">Não fiz nem curso complementar</option>
+        </select>
       </div>
     </div>
   );
