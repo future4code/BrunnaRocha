@@ -2,25 +2,49 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
+
+
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <h2>Controle de Despesas</h2>
+      </div>
+
+      <div className="valor">
+        <span>Informe o valor:</span>
+        <input type="text" name="valor" id="valor"/> 
+      </div>
+
+      <div className="despesa">
+        <span>Tipo de despesa:</span>
+        <input type="text" name="despesa" id="despesa"/>
+        <select>
+          <option value="est">Estudos</option>
+          <option value="laz">Lazer</option>
+          <option value="ali">Alimentação</option>
+          <option value="pes">Pessoal</option>
+        </select>
+      </div>
+
+
+      <div className="descricao">
+        <span>Descrição:</span>
+        <input type="text" name="descricao" id="descricao"/>
+      </div>
+      
     </div>
   );
+}
+
 }
 
 export default App;
