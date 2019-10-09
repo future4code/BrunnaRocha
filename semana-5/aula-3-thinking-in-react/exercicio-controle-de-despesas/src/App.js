@@ -26,7 +26,6 @@ render() {
 
       <div className="despesa">
         <span>Tipo de despesa:</span>
-        <input type="text" name="despesa" id="despesa"/>
         <select>
           <option value="est">Estudos</option>
           <option value="laz">Lazer</option>
@@ -40,7 +39,7 @@ render() {
         <span>Descrição:</span>
         <input type="text" name="descricao" id="descricao"/>
       </div>
-      
+
     </div>
   );
 }
