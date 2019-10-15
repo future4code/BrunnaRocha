@@ -23,6 +23,8 @@ export default function  UsersRegistered(props) {
            </ul> 
         )
     })
+
+    // A {listenedUsers} foi referenciada dentro da div para imprimir o return da função map.
         return (
             <div>
                 <header className="App-header">
