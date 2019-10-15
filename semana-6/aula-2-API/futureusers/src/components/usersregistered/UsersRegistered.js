@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 
 // O nome da função principal é o mesmo do componente (SEMPRE!!!).
+// A variável const listenedUsers recebe a props usersList que foi passada no container pai (App.js) e mapeia com cada usuário (eachuser) para retornar uma lista com cada um dos usuários.
 export default function  UsersRegistered(props) {
     const listenedUsers = props.usersList.map((eachuser) => {
         return (

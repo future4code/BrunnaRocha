@@ -20,6 +20,8 @@ const usersList = [{
   },
 }]
 
+// Passamos a props com a lista de usuários (usersList) que está na variável, que recebe ela mesma.
+//Após passar as props, ela foi chamada pela função "function  UsersRegistered" que a recebeu e portanto ficou "function  UsersRegistered(props)"
 class App extends Component {
   render() {
     return (
