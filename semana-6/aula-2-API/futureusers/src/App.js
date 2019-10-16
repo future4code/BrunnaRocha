@@ -6,13 +6,41 @@ import UserList from './components/UserList.js'
 
 
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       currentPage: "signup",
+       buttonText: "Lista de Usuários"
+    }
+  }
+
+  onButtonClick = () => {
+    if(this.state.currentPage === "signup") {
+      this.setState({
+        currentPage: "userList",
+        buttonText: "Voltar"
+      })
+    } else {
+      this.setState({
+        currentPage: "signup",
+        buttonText: "Lista de Usuários"
+      }) 
+    }
+  }  
+  
+
+    render () {
     return (
       <div>
-        <Signup/>
-        <UserList/>
+        {
+          this.state.currentPage === "signup" ? <Signup/> : <UserList/>
+        }
+        <button onClick={ this.onButtonClick }>{ this.state.buttonText }</button>
       </div>
     );
+  }  
 }
 
 

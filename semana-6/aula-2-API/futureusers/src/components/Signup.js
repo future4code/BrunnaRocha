@@ -21,13 +21,17 @@ const SignupContainer = styled.div `
              
         }
     }
+
+    onSaveClick = () => {
+        window.alert("Usuário salvo com sucesso!")
+    }
     
     render() {
         return (
             <SignupContainer>
                 <input placeholder= "Nome" type="text"/>
                 <input placeholder= "Email" type="text"/>
-                <button>Salvar</button>
+                <button onClick={ this.onSaveClick}>Salvar</button>
             </SignupContainer>
         )
     }
