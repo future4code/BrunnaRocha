@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const userToSignup = {
     name: "Emmanuel",
@@ -18,23 +19,52 @@ const SignupContainer = styled.div `
         super(props)
     
         this.state = {
-             
+          name: "",
+          email: ""   
         }
     }
 
     onSaveClick = () => {
-        window.alert("Usuário salvo com sucesso!")
+        const user = {
+            name: this.state.name,
+            email: this.state.email
+        }
+        console.log(user)
+        axios.post(
+            "https://us-central1-future4-users.cloudfunctions.net/api/users/createUser",
+            user,
+            {
+                headers:{
+                    "api-token": "32382399c21f8450ed2efe9b44135bb5"
+                }
+            }
+        ).then((res) => {
+            window.alert("Usuário salvo com sucesso!")
+        })
+    }
+
+    onNameChange = (event) => {
+        this.setState({
+            name: event.target.value
+        })
+    }
+
+    onEmailChange = (event) => {
+        this.setState({
+            email: event.target.value
+        })
     }
     
     render() {
         return (
             <SignupContainer>
-                <input placeholder= "Nome" type="text"/>
-                <input placeholder= "Email" type="text"/>
-                <button onClick={ this.onSaveClick}>Salvar</button>
+                <input value={ this.state.name } onChange={ this.onNameChange } placeholder= "Nome" type="text"/>
+                <input value={ this.state.email } onChange={ this.onEmailChange } placeholder= "Email" type="text"/>
+                <button onClick={ this.onSaveClick}> Salvar </button>
             </SignupContainer>
         )
     }
 }
+
 
 export default Signup;
