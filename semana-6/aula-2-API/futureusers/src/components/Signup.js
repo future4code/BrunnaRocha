@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+const userToSignup = {
+    name: "Emmanuel",
+    email: "Godwithus@gmail.com"
+}
+
+
 const SignupContainer = styled.div `
     width: 40%;
     display: flex;
