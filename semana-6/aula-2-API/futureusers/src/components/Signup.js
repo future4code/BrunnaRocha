@@ -30,8 +30,8 @@ const SignupContainer = styled.div `
             email: this.state.email
         }
         console.log(user)
-        axios.post(
-            "https://us-central1-future4-users.cloudfunctions.net/api/users/createUser",
+        axios.
+        post("https://us-central1-future4-users.cloudfunctions.net/api/users/createUser",
             user,
             {
                 headers:{
