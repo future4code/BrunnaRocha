@@ -43,6 +43,12 @@ class BoredAPI extends React.Component {
                     name="activity"
                     type="text"  
                     value={ this.state.currentActivityType }/>
+                
+                <select name="select">
+                    <option value="social">Social</option>
+                    <option value="diy">DIY</option>
+                    <option value="relaxation">Relaxation</option>
+                </select>
 
                 <input 
                     onChange={this.handleOnChangeParticipantsCount}
