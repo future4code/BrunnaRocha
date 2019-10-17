@@ -54,7 +54,7 @@ class UserList extends React.Component {
 
     onDeleteClick = (id) => {
         axios
-        .delete(`https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?${id}`,
+        .delete(`https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?id=${id}`,
         {
             headers:{
                 "api-token": "32382399c21f8450ed2efe9b44135bb5"
@@ -64,7 +64,7 @@ class UserList extends React.Component {
         .then(() => {
             this.performGetAllUsersRequest()
         })
-    })
+    }
 
      
     render() {
