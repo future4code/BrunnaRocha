@@ -15,18 +15,22 @@ class BoredAPI extends React.Component {
     }
 
     handleOnChangeActivity = (event) => {
+        console.log("1")
         this.setState({currentActivityType: event.target.value})
+        console.log(event.target.value)
     }
 
     handleOnChangeParticipantsCount = (event) => {
+        console.log("2")
         const newValue = Number(event.target.value);
         this.setState({currentParticipantsNumber: newValue})
     }
 
     fetchActivity = () => {
+        console.log("3")
         axios.get('https://www.boredapi.com/api/activity', {
             params: {
-                activity: this.state.currentActivityType,
+                type: this.state.currentActivityType,
                 participants: this.state.currentParticipantsNumber,
             }
         }).then((response) => {
