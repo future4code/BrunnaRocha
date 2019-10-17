@@ -38,13 +38,14 @@ class BoredAPI extends React.Component {
         return(
             <div>
                 <input 
-                    onChange={this.handleOnChangeActivity}
                     placeholder="Activity"
                     name="activity"
                     type="text"  
                     value={ this.state.currentActivityType }/>
                 
-                <select name="select">
+                <select 
+                    name="select" 
+                    onChange={this.handleOnChangeActivity}>
                     <option value="social">Social</option>
                     <option value="diy">DIY</option>
                     <option value="relaxation">Relaxation</option>
