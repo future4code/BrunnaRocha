@@ -8,7 +8,9 @@ class BoredAPI extends React.Component {
     
         this.state = {
             currentActivityType: "",
-            currentParticipantsNumber: 1,             
+            currentParticipantsNumber: 1,
+            retrievedActivity: "",  
+
         }
     }
 
@@ -21,19 +23,40 @@ class BoredAPI extends React.Component {
         this.setState({currentParticipantsNumber: newValue})
     }
 
+    fetchActivity = () => {
+        axios.get('https://www.boredapi.com/api/activity', {
+            params: {
+                activity: this.state.currentActivityType,
+                participants: this.state.currentParticipantsNumber,
+            }
+        }).then((response) => {
+            this.setState({ retrievedActivity: response.data.activity})
+        })
+    }
+
     render () {
         return(
             <div>
                 <input 
                     onChange={this.handleOnChangeActivity}
                     placeholder="Activity"
-                    name="activity"  
+                    name="activity"
+                    type="text"  
                     value={ this.state.currentActivityType }/>
 
                 <input 
                     onChange={this.handleOnChangeParticipantsCount}
                     name="participantsCount" 
+                    type="number"
                     value={ this.state.currentParticipantsNumber }/>
+                
+                <button onClick={ this.fetchActivity }>
+                    Search it!
+                </button>
+
+                {this.state.retrievedActivity && (
+                    <h1>{this.state.retrievedActivity}</h1>
+                )}
             </div>
         )
     }
