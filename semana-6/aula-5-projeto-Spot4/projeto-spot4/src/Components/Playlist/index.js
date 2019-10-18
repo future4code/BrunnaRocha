@@ -14,7 +14,10 @@ import axios from 'axios';
     render() {
         return (
             <div>
-              <h1>OLÁ, ESTOU AQUI</h1>  
+              <h1>Spot4</h1> 
+              <input name="Music" type="text"/> 
+              <input name="Artist" type="text"/>
+              <button>Rock it!</button>
             </div>
         )
     }
