@@ -23,46 +23,99 @@ import axios from 'axios';
         justify-content: center;
     `
 
-
-
-
- class Playlist extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            playlists: [],         
+    class Playlist extends Component {
+        constructor(props) {
+            super(props)
+            this.state = {
+                playlists: [],
+                errorMessage: undefined,
+                playlistNameValue: ""         
+            }
         }
-    }
+
+
+        componentDidMount() {
+            this.createPlaylists();
+          }
+        
+          createPlaylists = () => {
+            // urlBase: "https://us-central1-spotif4.cloudfunctions.net/api"
+            // token: "32382399c21f8450ed2efe9b44135bb5"
+            const data = {
+                name: this.state.playlistNameValue
+            };
+
+            const request = axios.post(
+              "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+              {
+                headers: {
+                  auth: "32382399c21f8450ed2efe9b44135bb5"
+                }
+              }
+            );
+        
+            request
+              .then(response => {
+                console.log(response);
+                this.setState({ playlists: response.data.result.list });
+              })
+              .catch(error => {
+                console.log(error);
+                this.setState({
+                  errorMessage:
+                    "Ocorreu um erro! Atualize a página para tentar novamente!"
+                });
+              });
+          };
+
+        addNewPlaylist = () => {
+            // urlBase: "https://us-central1-spotif4.cloudfunctions.net/api"
+            // token: "32382399c21f8450ed2efe9b44135bb5"
+            const data = {
+                name: this.state.playlistNameValue
+            };
+        
+            const request = axios.post(
+              "https://us-central1-spotif4.cloudfunctions.net/api/playlists/createPlaylist",
+              data,
+              {
+                headers: {
+                  auth: "32382399c21f8450ed2efe9b44135bb5"
+                }
+              }
+            );
+        }
+
     
-    render() {
-        console.log("Playlists: ", this.state.playlists);
-        const playlistsElementsList = this.state.playlists
-            return (
-                <BodyConfig>
-                    <Title>Spot4</Title>
+        render() {
+            console.log("Playlists: ", this.state.playlists)
+            const playlistsElementsList = this.state.playlists
+                return (
+                    <BodyConfig>
+                        <Title>Spot4</Title>
 
-                    <List>
-                        <label>Artist:</label>
-                        <input name="Artist" type="text"/>
-                    </List>
-                    
-                    <List>
-                        <label>Song:</label> 
-                        <input name="Song" type="text"/>
-                    </List>
-                    
-                    <List>
-                        <label>URL</label>
-                        <input name="URLmusic" type="text"/>
-                    </List>
-                    
+                        <List>
+                            <label>Artist:</label>
+                            <input name="Artist" type="text"/>
+                        </List>
+                        
+                        <List>
+                            <label>Song:</label> 
+                            <input name="Song" type="text"/>
+                        </List>
+                        
+                        <List>
+                            <label>URL</label>
+                            <input name="URLmusic" type="text"/>
+                        </List>
+                        
 
-                    <Button>Rock it!</Button>
+                        <Button onClick={this.addNewPlaylist}>Rock it!</Button>
 
-                    <ul>{ playlistsElementsList }</ul>
-                </BodyConfig>
-            )
-    }
+                        <ul>{ playlistsElementsList }</ul>
+                    </BodyConfig>
+                );
+        }
 }
 
 export default Playlist;

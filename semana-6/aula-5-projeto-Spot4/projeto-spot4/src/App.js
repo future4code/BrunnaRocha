@@ -1,12 +1,11 @@
 import React from 'react';
-import Style from 'styled-components';
-import Playlist from './Components/Playlist/index.js';
+import Playlist from './Components/Playlist/index';
 
 
 function App() {
   return (
     <div >
-      <Playlist />
+      <Playlist/>
     </div>
   );
 }
