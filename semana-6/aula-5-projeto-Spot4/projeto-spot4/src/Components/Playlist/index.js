@@ -7,27 +7,31 @@ import axios from 'axios';
     constructor(props) {
         super(props)
         this.state = {
-             
+            playlists: [],         
         }
     }
     
     render() {
-        return (
-            <div>
-              <h1>Spot4</h1>
-               
-              <label>Artist:</label>
-              <input name="Artist" type="text"/>
+        console.log("Playlists: ", this.state.playlists);
+        const playlistsElementsList = this.state.playlists
+            return (
+                <div>
+                    <h1>Spot4</h1>
 
-              <label>Song:</label> 
-              <input name="Song" type="text"/>
+                    <label>Artist:</label>
+                    <input name="Artist" type="text"/>
 
-              <label>URL</label>
-              <input name="URLmusic" type="text"/>
+                    <label>Song:</label> 
+                    <input name="Song" type="text"/>
 
-              <button>Rock it!</button>
-            </div>
-        )
+                    <label>URL</label>
+                    <input name="URLmusic" type="text"/>
+
+                    <button>Rock it!</button>
+
+                    <ul>{ playlistsElementsList }</ul>
+                </div>
+            )
     }
 }
 
