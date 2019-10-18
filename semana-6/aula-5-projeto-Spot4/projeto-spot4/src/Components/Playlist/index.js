@@ -14,9 +14,17 @@ import axios from 'axios';
     render() {
         return (
             <div>
-              <h1>Spot4</h1> 
-              <input name="Music" type="text"/> 
+              <h1>Spot4</h1>
+               
+              <label>Artist:</label>
               <input name="Artist" type="text"/>
+
+              <label>Song:</label> 
+              <input name="Song" type="text"/>
+
+              <label>URL</label>
+              <input name="URLmusic" type="text"/>
+
               <button>Rock it!</button>
             </div>
         )
