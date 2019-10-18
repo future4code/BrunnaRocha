@@ -1,6 +1,29 @@
 import React, { Component } from 'react'
-import Style from 'styled-components';
+import styled from 'styled-components';
 import axios from 'axios';
+
+    const Title = styled.h1 `
+        display: flex;
+        justify-content: center;
+    `
+    const List = styled.label `
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 50px;
+    `
+    const BodyConfig = styled.div `
+        background: #F29066;  
+
+    `
+    const Button = styled.button `
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    `
+
+
 
 
  class Playlist extends Component {
@@ -15,22 +38,29 @@ import axios from 'axios';
         console.log("Playlists: ", this.state.playlists);
         const playlistsElementsList = this.state.playlists
             return (
-                <div>
-                    <h1>Spot4</h1>
+                <BodyConfig>
+                    <Title>Spot4</Title>
 
-                    <label>Artist:</label>
-                    <input name="Artist" type="text"/>
+                    <List>
+                        <label>Artist:</label>
+                        <input name="Artist" type="text"/>
+                    </List>
+                    
+                    <List>
+                        <label>Song:</label> 
+                        <input name="Song" type="text"/>
+                    </List>
+                    
+                    <List>
+                        <label>URL</label>
+                        <input name="URLmusic" type="text"/>
+                    </List>
+                    
 
-                    <label>Song:</label> 
-                    <input name="Song" type="text"/>
-
-                    <label>URL</label>
-                    <input name="URLmusic" type="text"/>
-
-                    <button>Rock it!</button>
+                    <Button>Rock it!</Button>
 
                     <ul>{ playlistsElementsList }</ul>
-                </div>
+                </BodyConfig>
             )
     }
 }
