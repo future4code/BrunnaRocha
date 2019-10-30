@@ -1,4 +1,5 @@
 import React from 'react'
+import TaskCard from './TaskCard.js'
 
  class TaskConfig extends React.Component {
     render() {
@@ -10,7 +11,10 @@ import React from 'react'
                 <button>Marcar todas como completas</button>  
                 <button>Todas</button>
                 <button>Pendentes</button>
-                <button>Completas</button>              
+                <button>Completas</button> 
+                <div>
+                    <TaskCard/>
+                </div>             
             </div>
         )
     }
