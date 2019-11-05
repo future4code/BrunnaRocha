@@ -4,8 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import LoginPage from "../LoginPage";
 
 const routes = {
-  root: "/",
-  home: "/home",
+  home: "/",
   formTrips: "/application-form",
   createTrips: "/trips/create",
   listTrips: "/trips/list",
@@ -18,7 +17,6 @@ function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.root} component={LoginPage} />
         <Route path={routes.home} component={HomePage} />
         <Route path={routes.formTrips} component={ApplicationForm} />
         <Route path={routes.createTrips} component={HomePage} />
