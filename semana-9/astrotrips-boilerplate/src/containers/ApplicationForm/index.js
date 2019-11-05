@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { push } from "connected-react-router";
-import { routes } from "../Router/" 
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
-
 
 const LoginWrapper = styled.form`
   width: 100%;
@@ -16,7 +14,7 @@ const LoginWrapper = styled.form`
   display: grid;
 `;
 
-class HomePage extends Component {
+class ApplicationForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,22 +34,24 @@ class HomePage extends Component {
 
     return (
       <LoginWrapper>
-        <Button onClick={this.props.goToFormTrips}>Inscrição</Button>
-        <Button onClick={this.props.goToLogin}>Login</Button>
+        <TextField
+          onChange={this.handleFieldChange}
+          name="email"
+          type="email"
+          label="E-mail"
+          value={email}
+        />
+        <TextField
+          onChange={this.handleFieldChange}
+          name="password"
+          type="password"
+          label="Password"
+          value={password}
+        />
+        <Button>Login</Button>
       </LoginWrapper>
     );
   }
 }
 
-function mapDispatchToProps (dispatch) {
-    return {
-        goToFormTrips: () => dispatch(push(routes.formTrips)),
-        goToLogin: () => dispatch(push(routes.login)) 
-    }
-}
-
-export default connect(
-    null,
-    mapDispatchToProps
-  )(HomePage);
-
+export default ApplicationForm;
