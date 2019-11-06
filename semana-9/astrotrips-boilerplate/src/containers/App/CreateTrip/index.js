@@ -1,18 +1,7 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { push } from "connected-react-router";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import styled from "styled-components";
 
-const LoginWrapper = styled.form`
-  width: 100%;
-  height: 100vh;
-  gap: 10px;
-  place-content: center;
-  justify-items: center;
-  display: grid;
-`;
+
 
 class CreateTrip extends Component {
   constructor(props) {
@@ -23,18 +12,41 @@ class CreateTrip extends Component {
     };
   }
 
-  
+  function App() {
+  const handleSubmit = event => {
+    event.preventDefault();
+    alert("Viagem criada com sucesso!");
+  };
 
-  render() {
-    const { email, password } = this.state;
 
-    return (
-      <LoginWrapper>
-        
-        <Button>Login</Button>
-      </LoginWrapper>
-    );
-  }
-}
+    render() {
+        const { email, password } = this.state;
+
+        return (
+        <LoginWrapper>
+            <form onSubmit={handleSubmit}>
+                <input required name="name" pattern="^[a-zA-Z]{5,}" />
+                <input required datatype="durationInDays" min="50" type="number" />
+                <input required datatype="date" type="number" />
+                <select>
+                    <option value="Mercurio"></option>
+                    <option value="Venus"></option>
+                    <option value="Marte"></option>
+                    <option value="Terra"></option>
+                    <option value="Jupiter"></option>
+                    <option value="Saturno"></option>
+                    <option value="Urano"></option>
+                    <option value="Netuno"></option>
+                </select>
+                <input required name="description" min="30" type="textarea" />
+                <input required name="id" type="text" />
+                <Button type="submit">Criar viagem!</Button>
+            </form>
+        </LoginWrapper>
+        );
+    };
+    };
+};
 
 export default CreateTrip;
+
