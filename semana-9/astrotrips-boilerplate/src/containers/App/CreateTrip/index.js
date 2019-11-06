@@ -7,44 +7,38 @@ class CreateTrip extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
-      password: ""
+     
     };
   }
 
-  function App() {
-  const handleSubmit = event => {
+  handleSubmit = event => {
     event.preventDefault();
     alert("Viagem criada com sucesso!");
   };
 
 
     render() {
-        const { email, password } = this.state;
-
-        return (
-        <LoginWrapper>
-            <form onSubmit={handleSubmit}>
-                <input required name="name" pattern="^[a-zA-Z]{5,}" />
-                <input required datatype="durationInDays" min="50" type="number" />
-                <input required datatype="date" type="number" />
-                <select>
-                    <option value="Mercurio"></option>
-                    <option value="Venus"></option>
-                    <option value="Marte"></option>
-                    <option value="Terra"></option>
-                    <option value="Jupiter"></option>
-                    <option value="Saturno"></option>
-                    <option value="Urano"></option>
-                    <option value="Netuno"></option>
-                </select>
-                <input required name="description" min="30" type="textarea" />
-                <input required name="id" type="text" />
-                <Button type="submit">Criar viagem!</Button>
-            </form>
-        </LoginWrapper>
+      return (
+          <form onSubmit={this.handleSubmit}>
+            <input required name="name" pattern="^[a-zA-Z]{5,}" />
+            <input required datatype="durationInDays" min="50" type="number" />
+            <input required datatype="date" type="number" />
+            <select>
+              <option value="selecione">Selecione</option>
+              <option value="Mercurio">Mercúrio</option>
+              <option value="Venus">Vênus</option>
+              <option value="Marte">Marte</option>
+              <option value="Terra">Terra</option>
+              <option value="Jupiter">Júpiter</option>
+              <option value="Saturno">Saturno</option>
+              <option value="Urano">Urano</option>
+              <option value="Netuno">Netuno</option>
+            </select>
+            <input required name="description" pattern="^[a-zA-Z]{30,}" type="textarea" />
+            <input required name="id" type="text" />
+            <Button type="submit">Criar viagem!</Button>
+          </form>
         );
-    };
     };
 };
 

@@ -6,6 +6,7 @@ import ApplicationForm from "../ApplicationForm";
 import HomePage from "../HomePage";
 import ListTripsPage from "../ListTripsPage";
 import TripDetailsPage from "../TripDetailsPage/";
+import CreateTrip from "../App/CreateTrip";
 
  export const routes = {
   home: "/",
@@ -14,8 +15,6 @@ import TripDetailsPage from "../TripDetailsPage/";
   createTrips: "/trips/create",
   listTrips: "/trips/list",
   detailsTrips: "/trips/details",
-
-
 };
 
 function Router(props) {
@@ -24,7 +23,7 @@ function Router(props) {
       <Switch>
         <Route path={routes.login} component={LoginPage} />
         <Route path={routes.formTrips} component={ApplicationForm} />
-        <Route path={routes.createTrips} component={HomePage} />
+        <Route path={routes.createTrips} component={CreateTrip} />
         <Route path={routes.listTrips} component={ListTripsPage} />
         <Route path={routes.detailsTrips} component={TripDetailsPage} />
         <Route path={routes.home} component={HomePage} />

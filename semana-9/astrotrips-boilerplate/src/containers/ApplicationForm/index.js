@@ -1,38 +1,42 @@
 import React, { Component } from "react";
+import { optionCountry } from "../ApplicationForm/Countries.js"
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 
-const LoginWrapper = styled.form`
-  width: 100%;
-  height: 100vh;
-  gap: 10px;
-  place-content: center;
-  justify-items: center;
-  display: grid;
-`;
-
-class ApplicationForm extends Component {
+class ApplicationForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
+  
     this.state = {
-      email: "",
-      password: ""
-    };
+       
+    }
   }
 
-  
+
+   handleSubmit = event => {
+      event.preventDefault();
+      alert("Usuário criado com sucesso!");
+    };
 
   render() {
-    const { email, password } = this.state;
-
     return (
-      <LoginWrapper>
-        
-        <Button>Submeter!</Button>
-      </LoginWrapper>
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="name">Nome</label>
+          <input required name="name" pattern="^[a-zA-Z]{3,}" />
+          <label htmlFor="idade">Idade</label>
+          <input required name="idade" min="18" type="number" />
+          <select>
+            {optionCountry}
+          </select>
+          <input required name="applicationText" pattern="^[a-zA-Z]{30,}" type="textarea" />
+          <input required name="profession" pattern="^[a-zA-Z]{30,}" type="textarea" />
+          <input required name="id" type="text" />
+          <Button type="submit">Submeter!</Button>
+        </form>
     );
   }
 }
+
 
 export default ApplicationForm;
