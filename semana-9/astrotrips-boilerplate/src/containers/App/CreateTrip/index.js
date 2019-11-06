@@ -14,7 +14,7 @@ const LoginWrapper = styled.form`
   display: grid;
 `;
 
-class ApplicationForm extends Component {
+class CreateTrip extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,4 +37,4 @@ class ApplicationForm extends Component {
   }
 }
 
-export default ApplicationForm;
+export default CreateTrip;
