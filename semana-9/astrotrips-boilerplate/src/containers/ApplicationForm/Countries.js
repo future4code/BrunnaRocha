@@ -1,7 +1,7 @@
 import React from "react";
 export const optionCountry = (
     <React.Fragment>
-        <option value="selecione">Selecione</option>
+        <option>País</option>
         <option value="Albânia">Albânia</option>
         <option value="Alemanha">Alemanha</option>
         <option value="Andorra">Andorra</option>

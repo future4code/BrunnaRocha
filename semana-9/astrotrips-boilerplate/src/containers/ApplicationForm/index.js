@@ -22,16 +22,32 @@ class ApplicationForm extends React.Component {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Nome:</label>
           <input required name="name" pattern="^[a-zA-Z]{3,}" />
-          <label htmlFor="idade">age:</label>
+          <label htmlFor="idade">idade:</label>
           <input required name="idade" min="18" type="number" />
-          <label htmlFor="application">Application:</label>
-          <input required name="applicationText" pattern="^[a-zA-Z]{30,}" type="textarea" />
-          <label htmlFor="profession">Profession:</label>
-          <input required name="profession" pattern="^[a-zA-Z]{30,}" type="textarea" />
-          <label htmlFor="id">Id:</label>
-          <input required name="id" type="text" />
+          <label>
+            <p>Por que você é o candidato perfeito?</p>
+            <TextField
+            multiline
+            rows="4"
+            margin="normal"
+            variant="filled"
+            inputProps={{  pattern: "[a-zA-Z\s\\.,]", minlength:"30"  }}
+            value={this.state.applicationText} 
+            onChange={this.handleInputChange}  
+            />
+          </label>
+          <label htmlFor="profession">Profissão:</label>
+          <TextField
+            multiline
+            rows="4"
+            margin="normal"
+            variant="filled"
+            inputProps={{  pattern: "[a-zA-Z\s\\.,]", minlength:"10"  }}
+            value={this.state.applicationText} 
+            onChange={this.handleInputChange}  
+            />
           <select>
             {optionCountry}
           </select>
