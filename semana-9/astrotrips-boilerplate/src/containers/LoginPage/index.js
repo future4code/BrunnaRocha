@@ -4,6 +4,7 @@ import { push } from "connected-react-router";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
+import login from "../../actions/Auth.js"
 
 const LoginWrapper = styled.form`
   width: 100%;
@@ -29,6 +30,11 @@ class LoginPage extends Component {
     });
   };
 
+  onClickLogin = () => {
+    const { email, password } = this.state;
+    this.props.goToLogin(email, password)
+  }
+
   render() {
     const { email, password } = this.state;
 
@@ -48,10 +54,13 @@ class LoginPage extends Component {
           label="Password"
           value={password}
         />
-        <Button>Login</Button>
+        <Button onClick={this.onClickLogin}>Login</Button>
       </LoginWrapper>
     );
   }
 }
+const mapDispatchToProps = (dispatch) => ({
+  goToLogin: (email, password) => dispatch(login(email, password))
+})
 
-export default LoginPage;
+export default connect(null, mapDispatchToProps) (LoginPage);
