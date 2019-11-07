@@ -50,21 +50,14 @@ class CreateTrip extends Component {
             <TextField
               id="outlined-textarea"
               label="Name"
-              htmlFor="Name"
               value={this.state.valueName}
-              onChange={this.onChangeValueName}
               placeholder="Type your name here"
-              multiline
-              margin="normal"
-              variant="outlined"
-              inputProps={{  pattern: "^[a-zA-Z\s\\.,]{5,}"  }}
-              value={this.state.applicationText} 
-              onChange={this.handleInputChange}
+              inputProps={{  pattern: "^[a-zA-Z]{5,}"  }}
+              onChange={this.onChangeValueName}
               required
               name="Name"
             />
-            {/* <input required name="name" pattern="^[a-zA-Z]{5,}" /> */}
-
+    
             <label htmlFor="date">Date:</label>
             <input 
               required type="date" 

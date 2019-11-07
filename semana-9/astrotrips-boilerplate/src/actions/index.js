@@ -7,12 +7,12 @@ const setTrips = (trips) => ({
     }
   });
 
-// const setDetailTrip = (trip) => ({
-//     type: "SET_TRIPS",
-//     payload: {
-//     trip: trip,
-//     }
-// });
+const setDetailTrip = (trip) => ({
+    type: "SET_TRIPS",
+    payload: {
+    trip: trip,
+    }
+});
 
   export const getTrips = () => async (dispatch) => {
     const response = await axios.get(
@@ -21,9 +21,11 @@ const setTrips = (trips) => ({
     dispatch(setTrips(response.data.trips));
   };
 
-//   export const getTripsDetail = (id) => async (dispatch) => {
-//     const response = await axios.get(
-//       `https://us-central1-missao-newton.cloudfunctions.net/reduxTodo/brunna/trips/${id}`
-//     );
-//     dispatch(setDetailTrip(response.data.trip));
-//   };
+  export const getTripsDetail = (id) => async (dispatch) => {
+  const token = window.localStorage.getItem("token")
+    const response = await axios.get(
+      `https://us-central1-missao-newton.cloudfunctions.net/reduxTodo/brunna/trips/${id}`, {
+      headers: {auth: token}
+      });
+    dispatch(setDetailTrip(response.data.trip));
+  };

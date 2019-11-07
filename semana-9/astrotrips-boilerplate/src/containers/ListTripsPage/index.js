@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { routes } from "../../containers/Router"
 import { getTrips } from "../../actions"
 import { push } from "connected-react-router";
 import TextField from "@material-ui/core/TextField";
@@ -22,20 +23,22 @@ class ListTripsPage extends Component {
           }
         </div>
       );
-    }
+    } 
   }
-
   function mapDispatchToProps (dispatch) {
     return {
       searchTrips: () => dispatch(getTrips()),
+      goToLogin: () => dispatch(push(routes.login))
     }
   }
+
 
   function mapStateToProps (state) {
     return {
       tripsList: state.trips.trips
     }
   }
+
 
 export default connect(
   mapStateToProps,
