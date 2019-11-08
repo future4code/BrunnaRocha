@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { routes } from "../../containers/Router"
+import { routes } from "../Router"
 import { getTrips } from "../../actions"
 import { push } from "connected-react-router";
 import TextField from "@material-ui/core/TextField";
@@ -8,23 +8,38 @@ import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 
 
-class ListTripsPage extends Component {
+ class ListTripsPage extends React.Component {
+   constructor(props) {
+     super(props)
+   
+     this.state = {
+        
+     }
+   }
+   
     componentDidMount() {
       this.props.searchTrips()
     }
 
     render() {
+      const listTrips = this.props.tripsList.map((trip,index)=> {
+        return <div> 
+          <p> {trip.name} </p>
+          <p> {trip.date} </p>
+          <p> {trip.planet} </p>
+          <p> {trip.description} </p>
+          <p> {trip.durationInDays} </p>
+        
+        </div>
+      }) 
       return (
         <div>
-          {
-            this.props.tripsList.map((trip) => {
-                return(<li>{trip.name}</li>)
-            })
-          }
+          {listTrips}
         </div>
       );
     } 
   }
+
   function mapDispatchToProps (dispatch) {
     return {
       searchTrips: () => dispatch(getTrips()),
