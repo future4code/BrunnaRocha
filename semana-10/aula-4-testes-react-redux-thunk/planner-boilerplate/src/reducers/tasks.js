@@ -8,7 +8,7 @@ export const tasks = (state = initialState, action) => {
         case "SET_ALL_TASKS":
             return { ...state, allTasks: action.payload.tasks };
         default:
-            return: state;
+            return state;
     }
 }; 
 
