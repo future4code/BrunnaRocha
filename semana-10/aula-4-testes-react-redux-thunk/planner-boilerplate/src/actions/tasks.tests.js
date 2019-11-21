@@ -10,7 +10,7 @@ describe("expenses actions", () => {
     });
 
     const mockTask = {
-        id: 
+        id: "123", 
         day: "Quinta-feira",
         text: "Comprar Shawarma"
     };
