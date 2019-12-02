@@ -1,4 +1,4 @@
-const operation = toString(process.argv[2])
+const operation = (process.argv[2])
 const firstNumber = Number(process.argv[3])
 const secondNumber = Number(process.argv[4])
 

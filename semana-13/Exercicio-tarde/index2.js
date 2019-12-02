@@ -1,18 +1,13 @@
 const fs =require('fs');
-const data ='Comprar pão!';
-const dataOne = 'Comprar batatas!';
-const fileName = "newFile.txt";
+const fileName = process.argv[2]
+const task = process.argv[3]
+
 
 try{
-    fs.writeFileSync(fileName, data, 'utf8');
-    console.log("Dado inserido com sucesso!")
-} catch(err) {
-    console.error(err)
-}
-
-try{
-    fs.appendFileSync(fileName, dataOne, 'utf8');
-    console.log("Dado inserido com sucesso!")
+   /// fs.writeFileSync(fileName, task, 'utf8');
+    // console.log("Arquivo inserido com sucesso!")
+    fs.appendFileSync(fileName, task + "\n", 'utf8');
+    console.log("Tarefa inserida com sucesso!")
 } catch(err) {
     console.error(err)
 }
