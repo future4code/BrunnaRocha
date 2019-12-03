@@ -31,11 +31,4 @@ function pegaCarrosPorMarca(carros, marca) {
     return carros;
 }
 console.log("Hello world");
-const array = [1, 2, 3];
-const obj = {
-    arrayNumbQuant: array,
-    arrayNumbQuantImp: array % 1,
-    arraySomaTotal: 
-};
-const obj2;
 //# sourceMappingURL=test.js.map
