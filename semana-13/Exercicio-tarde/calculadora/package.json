@@ -1,0 +1,28 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Essa calculadora é incrível",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/BrunnaRocha.git"
+  },
+  "keywords": [
+    "calculator",
+    "calculadora",
+    "soma",
+    "subtrai",
+    "divide",
+    "multiplica"
+  ],
+  "author": "Brunna Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/BrunnaRocha/issues"
+  },
+  "homepage": "https://github.com/future4code/BrunnaRocha#readme"
+}
