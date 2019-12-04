@@ -1,17 +1,33 @@
-import axios, { AxiosResponse } from "axios";
+import { readdir } from 'fs';
 
-const text1 = "1.txt";
-const text2 = "2.txt";
-const text3 = "3.txt";
-const text4 = "4.txt";
-const text5 = "5.txt";
+readdir("textos", function(err, files:string[]) {
+    if (err) {
+      console.log("Error getting directory information.")
+    } else {
+      files.forEach(function(file:string) {
 
-const promise1:Promise<AxiosResponse> = axios.get(text1);
-const promise2:Promise<AxiosResponse> = axios.get(text2);
-const promise3:Promise<AxiosResponse> = axios.get(text3);
-const promise4:Promise<AxiosResponse> = axios.get(text4);
-const promise5:Promise<AxiosResponse> = axios.get(text5);
+        console.log(file)
 
-Promise.all([promise1, promise2, promise3, promise4, promise5]).then((values:AxiosResponse[]) => {
-  console.log(values);
+      })
+    }
+  })
+
+
+const textArray: string[] = [...Array()];
+
+const textOperation = new Promise((resolve, reject) => { 
+    const result = textArray.map((item:string, index:number) => {
+        return index;
+    });
+    resolve(result);
 });
+
+console.log("Antes da Promisse");
+
+textOperation.then((result:number[]) => {
+    console.log(result);
+}).catch((error) => {
+    console.error(error)
+});
+
+console.log("Depois da Promisse")
