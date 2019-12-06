@@ -14,7 +14,7 @@ type person = {
     }
 
 
-console.log(event),
+console.log(event)
 
 
 // import * as moment from 'moment';
