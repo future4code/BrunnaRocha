@@ -21,10 +21,10 @@ class UserAccount {
 }
 
 // Criando um instância
-const user: UserAccount = new UserAccount()
-user.getBalance() // Imprime "O seu extrato é de R$ " no console
+const userManager: UserAccount = new UserAccount()
+userManager.getBalance() // Imprime "O seu extrato é de R$ " no console
 
-
+export default UserAccount;
 
 
 
