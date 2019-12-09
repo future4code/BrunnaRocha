@@ -13,11 +13,11 @@ class Bank {
     }
 
     getAllAcounts(): UserAccount[] {
-
+        return
     }
 
     getAccountByCpf(): UserAccount {
-
+        return 
     }
 
     saveAccounts() : void {
