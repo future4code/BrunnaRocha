@@ -7,14 +7,16 @@ export class Cashier extends Employee {
         super(name, salary);
     }
 
-    public bill():(dishes: Dish[]): number {
-        const comanda = dishes
-        let total = 0
-        const calculateBill: number[] = dishes.forEach(dishes.price)
-        return
-    }
+    public bill(dishes: Dish[]): number {
+        let total: number = 0
+        for (let dish of dishes) {
+            total += dish.price
+        };
+
+        return total
+    };
 
     public sayJob(): void {
-        console.log("Oi, eu sou a caixa registradora!")
+        console.log("A sua conta foi de R$")
     }
 }
