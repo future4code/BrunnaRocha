@@ -10,10 +10,10 @@ class SaltyDish extends dish_1.Dish {
     }
 }
 exports.SaltyDish = SaltyDish;
-const feijoada = new SaltyDish(25, 13, ["arroz branco, couve, carne de porco, feijão preto"], 500);
-console.log(feijoada.getProfit());
-const shawarma = new SaltyDish(25, 9, ["pão pita, carne, frango, tomate, zaatar, purê de batata"], 100);
-console.log(shawarma.getProfit());
-const falafel = new SaltyDish(19, 6, ["gão de bico, salsinha, coentro, azeite"], 100);
-console.log(falafel.getProfit());
+exports.feijoada = new SaltyDish(25, 13, ["arroz branco, couve, carne de porco, feijão preto"], 500);
+console.log(exports.feijoada.getProfit());
+exports.shawarma = new SaltyDish(25, 9, ["pão pita, carne, frango, tomate, zaatar, purê de batata"], 100);
+console.log(exports.shawarma.getProfit());
+exports.falafel = new SaltyDish(19, 6, ["gão de bico, salsinha, coentro, azeite"], 100);
+console.log(exports.falafel.getProfit());
 //# sourceMappingURL=saltydish.js.map

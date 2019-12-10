@@ -15,11 +15,11 @@ export class SaltyDish extends Dish {
   }
 }
 
-const feijoada = new SaltyDish(25, 13, ["arroz branco, couve, carne de porco, feijão preto"], 500);
+export const feijoada = new SaltyDish(25, 13, ["arroz branco, couve, carne de porco, feijão preto"], 500);
 console.log(feijoada.getProfit());
 
-const shawarma = new SaltyDish(25, 9, ["pão pita, carne, frango, tomate, zaatar, purê de batata"], 100);
+export const shawarma = new SaltyDish(25, 9, ["pão pita, carne, frango, tomate, zaatar, purê de batata"], 100);
 console.log(shawarma.getProfit());
 
-const falafel = new SaltyDish(19, 6, ["gão de bico, salsinha, coentro, azeite"], 100);
+export const falafel = new SaltyDish(19, 6, ["gão de bico, salsinha, coentro, azeite"], 100);
 console.log(falafel.getProfit());
