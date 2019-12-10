@@ -1,0 +1,31 @@
+{
+  "name": "lista_de_tarefas",
+  "version": "1.0.0",
+  "description": "Lista de tarefas para pessoas que adoram uma organização",
+  "main": "index2.js",
+  "scripts": {
+    "test": "jest",
+    "start": "tsc && node build/exercicio1.js --target es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/BrunnaRocha.git"
+  },
+  "keywords": [
+    "todlist",
+    "lista",
+    "tarefas",
+    "tasks"
+  ],
+  "author": "Brunna Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/BrunnaRocha/issues"
+  },
+  "homepage": "https://github.com/future4code/BrunnaRocha#readme",
+  "dependencies": {
+    "@types/node": "^12.12.14",
+    "moment": "^2.24.0",
+    "typescript": "^3.7.3"
+  }
+}
