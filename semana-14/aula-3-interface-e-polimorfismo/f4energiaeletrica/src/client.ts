@@ -1,4 +1,7 @@
+// Este arquivo tem 3 propriedades: nome, número e consumo de energia do cliente
+// e um método que calcula o valor da conta deste cliente.
 export interface Client {
+  //propriedades
   clientName: string;
   // Refere-se ao nome do cliente
 
@@ -8,6 +11,7 @@ export interface Client {
   consumedEnergy: number;
   // Refere-se à energia consumida pelo cliente no mês
 
+  //método
   calculateBill(): number;
   // Retorna o valor da conta em reais
 }
