@@ -6,8 +6,8 @@ export class ResidentialClient extends Residence implements Client {
   public clientNumber: number;
   public consumedEnergy: number = 0;
   
-  constructor(residencialName: string, cpf: string, clientName: string, clientNumber: number) {
-    super(residencialName, cpf, cep);
+  constructor(residentialName: string, cpf: string, clientName: string, clientNumber: number) {
+    super(residentialName, cpf, cep);
     this.clientName = clientName;
     this.clientNumber= clientNumber;
   } 
