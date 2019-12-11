@@ -3,17 +3,17 @@
 import { Place } from "./place";
 
 export class Residence extends Place {
-    public residentialName: string;
-    // Refere-se ao nome da residência
+  public residentialName: string;
+  // Refere-se ao nome da residência
 
-    public cpf: string;
-    // Refere-se ao número de registro do cliente
+  public cpf: string;
+  // Refere-se ao número de registro do cliente
 
-    public cep: string;
+  public cep: string;
 
-    constructor(residentialName: string, cpf: string, cep: string){
-      super(cep);
-      this.residentialName = residentialName;
-      this.cpf = cpf;
-    }
+  constructor(residentialName: string, cpf: string, cep: string) {
+    super(cep);
+    this.residentialName = residentialName;
+    this.cpf = cpf;
+  }
 }
