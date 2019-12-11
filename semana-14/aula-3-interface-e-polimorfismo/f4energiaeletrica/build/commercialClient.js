@@ -1,16 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const trade_1 = require("./trade");
-class commercialClient extends trade_1.Trade {
-    constructor(cep, cnpj, name) {
+class CommercialClient extends trade_1.Trade {
+    constructor(name, cnpj, cep, clientName, clientNumber) {
         super(name, cnpj, cep);
         this.consumedEnergy = 0;
-        this.name = name;
+        this.clientName = clientName;
+        this.clientNumber = clientNumber;
     }
     calculateBill() {
-        return this.consumedEnergy * 0, 53;
+        return this.consumedEnergy * 0.53;
     }
-    ;
+    setConsumedEnergy(energy) {
+        this.consumedEnergy = energy;
+    }
 }
-exports.commercialClient = commercialClient;
+exports.CommercialClient = CommercialClient;
 //# sourceMappingURL=commercialClient.js.map

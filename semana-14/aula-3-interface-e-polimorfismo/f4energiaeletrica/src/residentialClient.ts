@@ -11,6 +11,13 @@ export class ResidentialClient extends Residence implements Client {
     this.clientName = clientName;
     this.clientNumber= clientNumber;
   } 
+
   public calculateBill(): number{
-    return this.consumedEnergy * 0,75;
-  };
+    return this.consumedEnergy * 0.75;
+  }
+
+  public setConsumedEnergy(energy: number): void {
+    this.consumedEnergy = energy;
+  }
+
+} 

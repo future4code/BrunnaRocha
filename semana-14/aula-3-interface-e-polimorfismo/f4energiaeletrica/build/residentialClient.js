@@ -9,9 +9,11 @@ class ResidentialClient extends residence_1.Residence {
         this.clientNumber = clientNumber;
     }
     calculateBill() {
-        return this.consumedEnergy * 0, 75;
+        return this.consumedEnergy * 0.75;
     }
-    ;
+    setConsumedEnergy(energy) {
+        this.consumedEnergy = energy;
+    }
 }
 exports.ResidentialClient = ResidentialClient;
 //# sourceMappingURL=residentialClient.js.map
