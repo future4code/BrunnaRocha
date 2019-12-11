@@ -1,6 +1,5 @@
 // Este arquivo tem 3 propriedades: cep (recebido do arquivo Place que é a classe pai),
 // nome e número da indústria.
-
 import { Place } from "./place";
 
 export class Industry extends Place {
@@ -13,6 +12,6 @@ export class Industry extends Place {
 
     cep: string
   ) {
-    super(cep);
+    super(cep, );
   }
 }
