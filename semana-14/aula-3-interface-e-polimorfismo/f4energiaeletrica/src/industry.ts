@@ -3,15 +3,18 @@
 import { Place } from "./place";
 
 export class Industry extends Place {
-  constructor(
-    public industryName: string,
-    // Refere-se ao nome da indústria
 
-    public industryNumber: string,
-    // Refere-se ao número de registro da empresa
+  public industryName: string;
+  // Refere-se ao nome da indústria
 
-    cep: string
-  ) {
-    super(cep, );
+  public industryNumber: string;
+  // Refere-se ao número de registro da empresa
+
+  public cep: string;
+
+  constructor(industryName: string, industryNumber: string, cep: string) {
+    super(cep);
+    this.industryName = industryName;
+    this.industryNumber = industryNumber;
   }
 }
