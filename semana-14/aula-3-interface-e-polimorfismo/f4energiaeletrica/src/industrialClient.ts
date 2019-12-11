@@ -1,7 +1,7 @@
 import { Client } from "./client"
 import { Industry } from "./industry";
 
-export class IndustryClient extends Industry implements Client {
+export class IndustrialClient extends Industry implements Client {
   public clientName: string;
   public clientNumber: number;
   public consumedEnergy: number = 0;

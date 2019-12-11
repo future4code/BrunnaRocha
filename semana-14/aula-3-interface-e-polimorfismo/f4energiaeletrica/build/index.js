@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const residentialClient_1 = require("./residentialClient");
 const commercialClient_1 = require("./commercialClient");
+const industrialClient_1 = require("./industrialClient");
 const client1 = new residentialClient_1.ResidentialClient("Rocha's House", "123.456.798-98", "12345-678", "Brunna", 1);
 const client2 = new residentialClient_1.ResidentialClient("Ramalho's House", "987.654.321-21", "98765-432", "Eliseu", 2);
 console.log(client1);
@@ -20,4 +21,12 @@ clientcomm1.setConsumedEnergy(14);
 clientcomm2.setConsumedEnergy(21);
 console.log("O valor da sua conta é de: R$", clientcomm1.calculateBill());
 console.log("O valor da sua conta é de: R$", clientcomm2.calculateBill());
+const clientindust1 = new industrialClient_1.IndustrialClient("Rock's Company", "03022019", "15975-321", "Rocha", 17);
+const clientindust2 = new industrialClient_1.IndustrialClient("Ramalho's Company", "02022019", "35715-123", "Ramalho", 13);
+console.log(clientindust1);
+console.log(clientindust2);
+clientindust1.setConsumedEnergy(3);
+clientindust2.setConsumedEnergy(30);
+console.log("O valor da sua conta é de: R$", clientindust1.calculateBill());
+console.log("O valor da sua conta é de: R$", clientindust2.calculateBill());
 //# sourceMappingURL=index.js.map

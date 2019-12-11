@@ -16,4 +16,4 @@ class IndustrialClient extends industry_1.Industry {
     }
 }
 exports.IndustrialClient = IndustrialClient;
-//# sourceMappingURL=IndustrialClient.js.map
+//# sourceMappingURL=industrialClient.js.map
