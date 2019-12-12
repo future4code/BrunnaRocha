@@ -10,6 +10,10 @@
   "keywords": [
     "solid"
   ],
-  "author": "Goli",
-  "license": "ISC"
+  "author": "Brunna Rocha",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.17",
+    "moment": "^2.24.0"
+  }
 }
