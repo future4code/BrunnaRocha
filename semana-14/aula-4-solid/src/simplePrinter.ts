@@ -1,4 +1,4 @@
-import { Animal } from "./animal";
+import { Animal } from "./post";
 import { Bird } from "./bird";
 import { Mammal } from "./mammal";
 

@@ -1,4 +1,4 @@
-import { Animal } from "./animal";
+import { Animal } from "./post";
 
 export abstract class Mammal extends Animal {
   // meters
