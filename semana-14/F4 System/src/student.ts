@@ -10,7 +10,6 @@ export class Student implements User {
     constructor(name: string, email: string, birthDate: moment.Moment, team: string){
         this.name = name;
         this.email = email;
-        this.email = email;
         this.birthDate = birthDate;
         this.team = team;
     }
