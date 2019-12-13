@@ -2,13 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Specialty;
 (function (Specialty) {
-    Specialty["NEWTON"] = "Newton";
-    Specialty["HTML"] = "Html";
-    Specialty["CSS"] = "Css";
-    Specialty["JS"] = "Js";
-    Specialty["REACT"] = "React";
-    Specialty["REDUX"] = "Redux";
-    Specialty["BACK"] = "Back";
-    Specialty["OO"] = "Oo";
+    Specialty["HTML"] = "html";
+    Specialty["CSS"] = "css";
+    Specialty["JS"] = "js";
+    Specialty["REACT"] = "react";
+    Specialty["REDUX"] = "redux";
+    Specialty["BACK"] = "back";
+    Specialty["ORIENTOBJ"] = "orient obj";
 })(Specialty = exports.Specialty || (exports.Specialty = {}));
 //# sourceMappingURL=specialty.js.map

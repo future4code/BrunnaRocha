@@ -1,17 +1,17 @@
-import { User } from "./user"
-import * as moment from "moment"
+import { User } from "./user";
 import { Mission } from "./mission";
+
 
 export class Student implements User {
     team: Mission;
     name: string;    
     email: string;
-    birthDate: moment.Moment;
+    birthDate: Date;
     
-    constructor(name: string, email: string, birthDate: moment.Moment, team: Mission){
+    constructor(name: string, email: string, day: number, month: number, year: number, team: Mission){
         this.name = name;
         this.email = email;
-        this.birthDate = birthDate;
+        this.birthDate = new Date (`${year}/${month}/${day}`),
         this.team = team;
     }
 }

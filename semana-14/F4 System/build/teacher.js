@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Teacher {
-    constructor(name, email, birthDate, specialty) {
+    constructor(name, email, day, month, year, specialty) {
         this.name = name;
         this.email = email;
-        this.birthDate = birthDate;
-        this.specialty = specialty;
+        this.birthDate = new Date(`${year}/${month}/${day}`),
+            this.specialty = specialty;
     }
 }
 exports.Teacher = Teacher;
