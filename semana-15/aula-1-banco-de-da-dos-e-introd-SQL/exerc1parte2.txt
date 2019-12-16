@@ -1,0 +1,17 @@
+CREATE TABLE funcionariosF4 (
+id int PRIMARY KEY,
+nome varchar(255) NOT NULL,
+salario int,
+local_de_trabalho varchar(255) NOT NULL,
+genero varchar(1),
+data_de_nascimento date,
+data_de_contratacao date 
+);
+
+INSERT INTO funcionariosF4(id, nome, salario, local_de_trabalho, genero, data_de_nascimento, data_de_contratacao)
+VALUES (7, "Jorge", 5000, "São Paulo", "M", "1995-06-12", "2019-03-01"),
+(2, "Darvas", 5000, "Minas Gerais", "M", "1997-03-12", "2019-03-12"),
+(3, "Paula", 5000, "São Carlos", "F", "1992-08-19", "2019-05-15"),
+(4, "Mariana", 5000, "Foz do Iguaçú", "F", "1990-02-27", "2019-05-13"),
+(5, "Anderson", 3500, "Rio de Janeiro", "M", "1993-07-01", "2019-09-14"),
+(6, "Alessandra", 5650, "Rio Grande do Sul", "F", "1996-04-06", "2019-12-13");
