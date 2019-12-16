@@ -1,0 +1,19 @@
+-- exercício 2a)
+SELECT primeiro_nome, ultimo_nome, email
+FROM correntistas
+WHERE conta_corrente < 0;
+
+-- exercício 2b)
+SELECT primeiro_nome, ultimo_nome, genero
+FROM correntistas
+WHERE pais = "peru" OR YEAR(aniversario) < 1990;
+
+-- exercício 2c)
+SELECT ultimo_nome
+FROM correntistas
+WHERE primeiro_nome LIKE "A%";
+
+-- exercício 2d)
+SELECT primeiro_nome, ultimo_nome, aniversario
+FROM correntistas
+WHERE YEAR(aniversario)> 2000 AND conta_corrente > 1000;
