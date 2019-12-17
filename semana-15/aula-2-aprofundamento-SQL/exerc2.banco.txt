@@ -1,0 +1,51 @@
+-- exercício 2 - item 1
+SELECT CONCAT_WS(" ", primeiro_nome, ultimo_nome) AS "Nome completo", conta_corrente 
+FROM correntistas
+WHERE conta_corrente > 3000 AND pais = "Brazil"
+ORDER BY conta_corrente
+LIMIT 100;
+
+-- exercício 2 - item 2
+SELECT COUNT(genero) "Quantidade de mulheres"
+FROM correntistas
+WHERE genero = "F" AND YEAR(aniversario) < "1987";
+
+-- exercício 2 - item 3
+SELECT SUM(conta_corrente) "Total"
+FROM correntistas c
+WHERE pais = "Peru" AND YEAR(aniversario) > "1993";
+
+-- exercício 2 - item 4
+SELECT COUNT(genero) "Quantidade", pais, genero
+FROM correntistas
+GROUP BY pais, genero;
+
+-- exercício 2 - item 5
+SELECT COUNT(aniversario) "Repetição", aniversario
+FROM correntistas
+GROUP BY aniversario
+HAVING COUNT(aniversario) > 1
+ORDER BY COUNT(aniversario) DESC;
+
+-- exercício 2 - item 6
+SELECT avg(aniversario) "Média de idade",  pais
+FROM correntistas
+GROUP BY pais;
+
+-- exercício 2 - item 7
+SELECT aniversario, primeiro_nome
+FROM correntistas
+WHERE MONTH(aniversario) = "12"
+ORDER BY  DATEDIFF(CURDATE(), aniversario)/365 ASC;
+
+-- exercício 2 - item 8
+SELECT avg(conta_corrente) "Total conta corrente",  pais
+FROM correntistas
+GROUP BY pais;
+
+-- exercício 2 - item 9
+SELECT COUNT(primeiro_nome) "Repetição", primeiro_nome
+FROM correntistas
+GROUP BY primeiro_nome
+HAVING COUNT(primeiro_nome) > 1
+ORDER BY COUNT(primeiro_nome) DESC;
