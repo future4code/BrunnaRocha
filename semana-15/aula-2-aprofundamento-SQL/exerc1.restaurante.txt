@@ -1,0 +1,21 @@
+-- exercício 1 - item 1
+SELECT nome, salario
+FROM funcionarios
+ORDER BY salario DESC 
+LIMIT 5;
+
+-- exercício 1 - item 2
+SELECT avg(salario) "Média salarial",  local_de_trabalho 
+FROM funcionarios
+GROUP BY local_de_trabalho;
+
+-- exercício 1 - item 3
+SELECT COUNT(*) "Quantidade de gênero", genero, local_de_trabalho
+FROM funcionarios
+GROUP BY genero, local_de_trabalho;
+
+-- exercício 1 - item 4
+SELECT nome, data_contratacao
+FROM funcionarios
+ORDER BY  data_contratacao ASC
+LIMIT 10;
