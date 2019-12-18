@@ -7,3 +7,10 @@ JOIN livros ON primeiro_nome = "Arthur";
 SELECT primeiro_nome, ultimo_nome, titulo
 FROM autores
 JOIN livros ON primeiro_nome LIKE "A%";
+
+-- Exercício 3 - item 3
+SELECT autores.primeiro_nome "Nome do autor", COUNT(livros.titulo) "Número de Livros"
+FROM livros
+JOIN autores ON livros.autor_id = autores.id
+GROUP BY autores.primeiro_nome
+ORDER BY COUNT(livros.titulo) DESC;
