@@ -15,9 +15,17 @@ JOIN autores ON livros.autor_id = autores.id
 GROUP BY autores.primeiro_nome
 ORDER BY COUNT(livros.titulo) DESC;
 
--- Exercício 4 - item 4
+-- Exercício 3 - item 4
 SELECT livros.titulo "Nome do Livro mais alugado", COUNT(livros.titulo) "Quantidade de livros"
 FROM livros
 JOIN usuarios_livros ON livros.id = usuarios_livros.livro_id
 GROUP BY livros.titulo
+ORDER BY COUNT(livros.titulo) DESC;
+
+-- Exercício 3 - item 5
+SELECT usuarios.primeiro_nome "Nome do usuário", COUNT(livros.titulo) "Número de livros"
+FROM livros
+JOIN usuarios_livros ON livros.id = usuarios_livros.livro_id
+JOIN usuarios ON usuarios.id = usuarios_livros.usuario_id
+GROUP BY usuarios.primeiro_nome
 ORDER BY COUNT(livros.titulo) DESC;
