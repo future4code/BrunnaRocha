@@ -1,0 +1,5 @@
+-- Exercício 3 - item 1
+SELECT primeiro_nome, titulo
+FROM autores
+JOIN livros ON primeiro_nome = "Arthur";
+
