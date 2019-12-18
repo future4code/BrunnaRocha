@@ -29,3 +29,8 @@ JOIN usuarios_livros ON livros.id = usuarios_livros.livro_id
 JOIN usuarios ON usuarios.id = usuarios_livros.usuario_id
 GROUP BY usuarios.primeiro_nome
 ORDER BY COUNT(livros.titulo) DESC;
+
+-- Exercício 3 - item 6
+SELECT nome, titulo, fundacao
+FROM editoras
+JOIN livros ON fundacao < "1990-01-01";
