@@ -34,3 +34,9 @@ ORDER BY COUNT(livros.titulo) DESC;
 SELECT nome, titulo, fundacao
 FROM editoras
 JOIN livros ON fundacao < "1990-01-01";
+
+-- Exercício 3 - item 7
+SELECT primeiro_nome, ultimo_nome, data_nascimento
+FROM usuarios
+JOIN livros ON data_nascimento < "1981-01-01"
+JOIN usuarios_livros ON livros.id = usuarios_livros.livro_id;
