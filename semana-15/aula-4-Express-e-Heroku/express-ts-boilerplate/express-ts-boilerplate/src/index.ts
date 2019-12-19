@@ -10,10 +10,10 @@ const connection = knex({
   connection: {
     host : 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
     user : 'brunna',
-    password : 'process.v.SENHA_BANCO',
+    password : process.env.SENHA_BANCO,
     database : 'brunna'
   }
-});
+});console.log(process.env.SENHA_BANCO)
 
 app.get('/', (req: Request, res: Response) => {
   const resposta = {

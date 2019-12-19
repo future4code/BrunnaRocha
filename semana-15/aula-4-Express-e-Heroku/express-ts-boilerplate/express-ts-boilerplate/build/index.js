@@ -11,9 +11,9 @@ const connection = knex_1.default({
     client: 'mysql',
     connection: {
         host: 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
-        user: 'USUARIO',
-        password: 'SENHA',
-        database: 'exercicios'
+        user: 'brunna',
+        password: 'process.v.SENHA_BANCO',
+        database: 'brunna'
     }
 });
 app.get('/', (req, res) => {
