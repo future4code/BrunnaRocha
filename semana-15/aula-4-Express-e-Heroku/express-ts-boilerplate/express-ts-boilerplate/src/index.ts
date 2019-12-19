@@ -9,9 +9,9 @@ const connection = knex({
   client: 'mysql',
   connection: {
     host : 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
-    user : 'USUARIO',
-    password : 'SENHA',
-    database : 'exercicios'
+    user : 'brunna',
+    password : 'process.v.SENHA_BANCO',
+    database : 'brunna'
   }
 });
 
@@ -68,43 +68,12 @@ const server = app.listen(process.env.PORT || 3000, () => {
     console.error(`Failure upon starting server.`);
   }
 });
-
-// CT - Ex1
-app.get('/getAllBrazilianClients', async (req: Request, res: Response) => {
-  const query = connection.select('primeiro_nome')
-                          .from('correntistas')
-                          .where('pais', 'Brazil');
-  const result = await query;
-  res.send(result);
-});
-// CT - Ex2
-app.get('/searchClientByName', (req: Request, res: Response) => {
-  const nameToSearch = req.query.name;
-  if(!nameToSearch){
-    res.status(400).end();
-    return;
-  }
-  const query = connection.raw(`SELECT primeiro_nome FROM correntistas WHERE primeiro_nome LIKE "%${nameToSearch}%"`)
-  query.then(result => {
-    res.send(result)
-  })
-});
-// CT - Ex3
-app.get('/getBirthdaysAfterDate/:date', (req: Request, res: Response) => {
-  const dateToBeCompared = req.params.date;
-  const query = connection.raw(`SELECT primeiro_nome, aniversario FROM correntistas WHERE aniversario < "${dateToBeCompared}"`)
-  query.then(result => {
-    res.send(result);
-  })
-});
-// CT - Ex4
-app.post('/createClient', (req: Request, res: Response) => {
-  const newCliente = {
-    ...req.body,
-    divida_perdoada: 0,
-    conta_corrente: 0,
+// Criando o usuário
+app.post('/createUser', (req: Request, res: Response) => {
+  const newUser = {
+    ...req.body
   };
-  const query = connection('correntistas').insert(newCliente);
+  const query = connection('users').insert(newUser);
   query.then(result => {
     res.send(result);
   }).catch(e => {
