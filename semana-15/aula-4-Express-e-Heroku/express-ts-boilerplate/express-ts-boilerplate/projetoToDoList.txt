@@ -1,0 +1,9 @@
+-- Criar tabela de users
+CREATE TABLE users (
+ id INT,
+ name VARCHAR(255),
+ nick_name VARCHAR(255),
+ email VARCHAR(255),
+ bithdate date,
+ PRIMARY KEY (id, nick_name, email)
+);
