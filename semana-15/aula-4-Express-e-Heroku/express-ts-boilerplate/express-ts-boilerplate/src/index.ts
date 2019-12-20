@@ -80,16 +80,23 @@ app.post('/createUser', (req: Request, res: Response) => {
     res.send(e);
   })
 });
+// Pegando os usuários
+app.get('/getAllUsers', async (req: Request, res: Response) => {
+  const query = connection.select('name').from('users');
+  const result = await query;
+  res.send(result);
+});
 // Editando o usuário
 app.put('/editUser/:id', async (req: Request, res: Response) => {
   const newNickName = req.body.nickname;
   const userToEdit = req.params.id;
 
   try {
-    const query = connection('users').where('id', '=', userToEdit).update({ nickname: newNickName });
+    const query = connection('users').where('id', '=', userToEdit).update({ nick_name: newNickName });
     const result = await query;
+    res.status(200).end();
   } catch (error) {
-    res.sendStatus(500).end();
+    res.status(500).send(error);
   }
-  res.sendStatus(200).end();
+  
 });
