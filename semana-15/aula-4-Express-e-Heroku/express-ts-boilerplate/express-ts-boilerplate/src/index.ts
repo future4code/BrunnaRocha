@@ -94,9 +94,21 @@ app.put('/editUser/:id', async (req: Request, res: Response) => {
   try {
     const query = connection('users').where('id', '=', userToEdit).update({ nick_name: newNickName });
     const result = await query;
-    res.status(200).end();
+    res.status(200).send(result);
   } catch (error) {
     res.status(500).send(error);
   }
-  
+});
+// Deletando o usuário
+app.delete('/deleteUser/:id', async (req: Request, res: Response) => {
+  const deleteUser = Number(req.body.id);
+  const userToDelete = Number(req.params.id);
+
+  try {
+    const query = connection('users').where('id', '=', userToDelete).delete();
+    const result = await query;
+    res.status(200).send(result);
+  } catch (error) {
+    res.status(500).send(error);
+  }
 });
