@@ -8,12 +8,12 @@ app.use(express.json()); // Linha mágica (middleware)
 const connection = knex({
   client: 'mysql',
   connection: {
-    host : 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
-    user : 'brunna',
-    password : process.env.SENHA_BANCO,
-    database : 'brunna'
+    host: 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
+    user: 'brunna',
+    password: process.env.SENHA_BANCO,
+    database: 'brunna'
   }
-});console.log(process.env.SENHA_BANCO)
+}); console.log(process.env.SENHA_BANCO)
 
 app.get('/', (req: Request, res: Response) => {
   const resposta = {
@@ -31,7 +31,7 @@ app.get('/', (req: Request, res: Response) => {
 app.get('/ping', (req: Request, res: Response) => {
   const hasQueryString = Object.values(req.query).length > 0;
 
-  if(hasQueryString){
+  if (hasQueryString) {
     // Exemplo de retorno de um JSON
     res.send(req.query);
   } else {
@@ -50,7 +50,7 @@ app.get('/hello/:name', (req: Request, res: Response) => {
 app.post('/mirror/:cor', (req: Request, res: Response) => {
   let responseBody;
 
-  if(req.params.cor !== "0"){
+  if (req.params.cor !== "0") {
     responseBody = { ...req.body, corPredileta: req.params.cor };
   } else {
     responseBody = { ...req.body, corPredileta: "NAO INFORMADA" };
@@ -61,7 +61,7 @@ app.post('/mirror/:cor', (req: Request, res: Response) => {
 
 // Trecho do código responsável por inicializar todas as APIs
 const server = app.listen(process.env.PORT || 3000, () => {
-  if(server){
+  if (server) {
     const address = server.address() as AddressInfo;
     console.log(`Server is running in http://localhost:${address.port}`);
   } else {
@@ -79,4 +79,17 @@ app.post('/createUser', (req: Request, res: Response) => {
   }).catch(e => {
     res.send(e);
   })
+});
+// Editando o usuário
+app.put('/editUser/:id', async (req: Request, res: Response) => {
+  const newNickName = req.body.nickname;
+  const userToEdit = req.params.id;
+
+  try {
+    const query = connection('users').where('id', '=', userToEdit).update({ nickname: newNickName });
+    const result = await query;
+  } catch (error) {
+    res.sendStatus(500).end();
+  }
+  res.sendStatus(200).end();
 });
