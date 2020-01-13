@@ -57,4 +57,16 @@ export class ClientOrder {
         return this.borderColor
     }
 
+    public calculatePaperPrice() {
+        return this.paper.calcularPreco()
+    }
+
+    public calculateBorderPrice() {
+        return this.borderType.calcularPreco()
+    }
+
+    public calculateOrderTotal() {
+        return this.borderType.calcularPreco() + this.paper.calcularPreco()
+    }
+
 } 
