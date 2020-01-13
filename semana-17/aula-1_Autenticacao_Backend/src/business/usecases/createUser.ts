@@ -2,7 +2,7 @@ import { UserGateway } from "../gateways/user/UserGateway"
 import { User } from "../entities/User"
 
 export class CreateUserUC {
-    constructor() {}
+    constructor(private userGateway: UserGateway) {}
 
     async execute(input: CreateUserUCInput): Promise<void> {}   
 }
