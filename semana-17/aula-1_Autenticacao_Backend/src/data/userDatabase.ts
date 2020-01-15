@@ -49,7 +49,7 @@ export class UserDatabase implements UserGateway {
 
         const returnedUser = query [0] [0];
         if(!returnedUser) {
-            throw new Error("User not found");
+            throw new Error("User not found"); 
         }
     }
 }
