@@ -1,5 +1,5 @@
 import { UserGateway } from "../gateways/user/UserGateway"
-import { User } from "../entities/User"
+import { User } from "../../../entities/User"
 
 export class CreateUserUC {
     constructor(private userGateway: UserGateway) {}
