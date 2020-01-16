@@ -1,4 +1,7 @@
 class CreateRecipeUseCase {
+    
+    constructor(private: UserGateway: UserGateway)
+
     execute(input: CreateRecipeInput) {
         if(!input.title || !input.description || !input.userId) {
             throw new Error('Falta informações')
