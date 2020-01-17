@@ -7,6 +7,5 @@ export interface UserGateway {
     createUserTable(): Promise<void>;
     createUser(user: User): Promise<void>;
     updatePassword(id: number, newPassword: string): Promise<void>;
-
-    verifyUserExists(id: string): Promise<boolean>
+    // verifyUserExists(id: string): Promise<boolean>
 }
