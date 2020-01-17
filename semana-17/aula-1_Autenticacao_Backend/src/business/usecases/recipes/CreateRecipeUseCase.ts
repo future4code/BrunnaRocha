@@ -1,11 +1,23 @@
 class CreateRecipeUseCase {
-    
+
     constructor(private: UserGateway: UserGateway)
 
     execute(input: CreateRecipeInput) {
-        if(!input.title || !input.description || !input.userId) {
-            throw new Error('Falta informações')
+        this.validateInput(input)
+
+        this.verifyUserExists(input.UserId)
+
+        return 'sucess'
+    }
+
+    validateInput(input: CreateRecipeInput) {
+        if(!(input.title && input.description && input.userId)) {
+            throw new Error('Information missing')
         }
+    }
+
+    verifyUserExists(userId: string) {
+
     }
 }
 
