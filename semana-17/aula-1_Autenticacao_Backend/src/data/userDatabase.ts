@@ -14,16 +14,16 @@ export class UserDatabase implements UserGateway {
     });
 
 
-    // public async createUserTable(): Promise<void> {
-    //     await this.connection.raw(`DROP TABLE Users`);
-    //     await this.connection.raw(`CREATE TABLE Users(
-    //         id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    //         name varchar(255) NOT NULL,
-    //         email varchar(255) NOT NULL UNIQUE,
-    //         age int NOT NULL,
-    //         password varchar(255) NOT NULL
-    //     )`);
-    // }
+    public async createUserTable(): Promise<void> {
+        await this.connection.raw(`DROP TABLE Users`);
+        await this.connection.raw(`CREATE TABLE Users(
+            id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+            name varchar(255) NOT NULL,
+            email varchar(255) NOT NULL UNIQUE,
+            age int NOT NULL,
+            password varchar(255) NOT NULL
+        )`);
+    }
 
     public async getUserById(id: string): Promise<User> {
         const query = await this.connection.raw(

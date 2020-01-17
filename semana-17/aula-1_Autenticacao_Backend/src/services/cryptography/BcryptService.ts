@@ -1,5 +1,6 @@
 import { CryptographyGateway } from '../../business/gateways/crypt/CryptographyGateway';
 import * as bcrypt from "bcrypt";
+
 export class BcryptService implements CryptographyGateway {
     
     private static BCRYPT_SALT_ROUNDS: 10

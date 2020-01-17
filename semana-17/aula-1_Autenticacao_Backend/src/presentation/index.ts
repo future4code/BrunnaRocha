@@ -3,6 +3,10 @@ import { LoginUC } from '../business/usecases/auth/Login';
 import { UserDatabase } from '../data/userDatabase';
 import { GetLoggedUserInformationUC } from '../business/usecases/users/GetLoggedUserInformation';
 import { CreateUserUC } from '../business/usecases/users/CreateUserUC';
+import { V4IdGenerator } from '../services/auth/v4IdGenerator';
+import { JwtAuthService } from '../services/auth/JWTAuthService';
+import { BcryptService } from '../services/cryptography/BcryptService'
+
 
 
 const app = express()
@@ -59,7 +63,7 @@ app.post("/signup", async (req: Request, res: Response) => {
         );
         const result = await createUserUC.execute({
             email: req.body.email,
-            passwaord: req.body.password
+            passworrd: req.body.password
         });
         res.status(200).send(result)
     } catch (err) {
@@ -69,7 +73,9 @@ app.post("/signup", async (req: Request, res: Response) => {
     }
 });
 
-app.post("/changePassword", async (req: Request, res: Response) => {});
+app.post("/changePassword", async (req: Request, res: Response) => {
+
+});
 
 app.get("/getAllUsers", async (req: Request, res: Response) => {
     try {
