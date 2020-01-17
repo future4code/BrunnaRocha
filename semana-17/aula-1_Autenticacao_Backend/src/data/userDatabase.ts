@@ -1,4 +1,4 @@
-import { UserGateway } from "../business/gateways/UserGateway"
+import { UserGateway } from "../business/gateways/user/UserGateway"
 import { User } from "../entities/User"
 import knex from "knex";
 
