@@ -63,7 +63,7 @@ app.post("/signup", async (req: Request, res: Response) => {
         );
         const result = await createUserUC.execute({
             email: req.body.email,
-            passworrd: req.body.password
+            password: req.body.password
         });
         res.status(200).send(result)
     } catch (err) {
