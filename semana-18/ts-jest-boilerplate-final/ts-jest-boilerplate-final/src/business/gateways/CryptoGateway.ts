@@ -1,3 +1,3 @@
 export interface CryptoGateway {
-    hash(word: any):string;
+    hash(word: string): Promise<string>;
 }

@@ -1,9 +1,14 @@
 import { User } from "../../entities/User";
+import { AuthGateway } from "../../gateways/AuthGateway";
+import { UserGateway } from "../../gateways/UserGateway";
+import { CryptoGateway } from "../../gateways/CryptoGateway";
+import { IdGeneratorGateway } from "../../gateways/IdGeneratorGateway";
+
 
 export class RegisterUserUC {
     constructor(
         private userGateway: UserGateway,
-        private cryptographyGateway: CryptographyGateway,
+        private cryptoGateway: CryptoGateway,
         private idGenerator: IdGeneratorGateway,
         private auth: AuthGateway
     ) { }
@@ -11,10 +16,11 @@ export class RegisterUserUC {
     async execute(input: RegisterUserUCInput): Promise<string> {
         this.validateUserInput(input);
         const id = this.idGenerator.generate();
-        const user = new User(id, input.name, input.email, input.password);
-        const password = this.cryptographyGateway.hash(input.password);
+        const password = await this.cryptoGateway.hash(input.password);
+        const user = new User(id, input.name, input.email, password);
+       
 
-        await this.userGateway.registerUser(User);
+        await this.userGateway.registerUser(user);
         const token = this.auth.createToken(user.getId(), user.getEmail());
 
         return token; 
