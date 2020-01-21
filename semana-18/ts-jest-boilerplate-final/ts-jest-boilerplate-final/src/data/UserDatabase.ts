@@ -1,9 +1,17 @@
 import knex from 'knex';
 import { User } from '../business/entities/User';
+import { UserGateway } from '../business/gateways/user/UserGateway'
 
 
-export class UserDatabase extends UserGateway {
-    private connection = knex({...
+export class UserDatabase implements UserGateway {
+    private connection = knex({
+        client: 'mysql',
+        connection: {
+            host: 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
+            user: 'brunna',
+            password: 'f0938b7263c683db91a52018a6b038e8',
+            database: 'brunna'   
+        }
     });
 
 
@@ -27,7 +35,7 @@ export class UserDatabase extends UserGateway {
 
     public async getUserByEmail (email: string): Promise<User> {
         const query = await this.connection.raw(
-            `SELECT * FROM user_FutureBook WHERE email='${email}';`
+            `SELECT * FROM FutureBook_user WHERE email='${email}';`
         );
 
         const returnedUser = query [0] [0];
@@ -55,7 +63,7 @@ export class UserDatabase extends UserGateway {
 
     async verifyUserExists(id: string): Promise<boolean> {
         const query = await this.connection.raw(
-            `SELECT * FROM use_FutureBook WHERE id=${id};`
+            `SELECT * FROM FutureBook_user WHERE id=${id};`
         );
         const returnedUser = query [0] [0];
 
