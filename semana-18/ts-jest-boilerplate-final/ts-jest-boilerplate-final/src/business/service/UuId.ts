@@ -1,8 +1,8 @@
 import { v4 } from 'uuid'
-import { idGateway } from '../gateways/IdGeneratorGateway'
+import { IdGeneratorGateway } from '../gateways/IdGeneratorGateway'
 
 
-export class generateRandomId implements idGateway {
+export class generateRandomId implements IdGeneratorGateway {
     generate() {
         return v4();
     }

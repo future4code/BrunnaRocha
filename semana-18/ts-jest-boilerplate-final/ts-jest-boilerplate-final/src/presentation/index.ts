@@ -28,4 +28,26 @@ app.post("/signup", async (req: request, res: Response) => {
     }
 });
 
+app.post("/login", async (req: Request, res: Response) => {
+    try {
+        const loginUC = new LoginUC(
+            new UserDatabase(),
+            new BcryptService(),
+            new JwtAuthService()
+        )
+
+        const result = await loginUseCase.execute({
+            email: req.body.email,
+            password: req.body.password
+        })
+
+        res.send(result)
+
+    } catch(err) {
+        res.status(400).send({
+            erroMessage: err.message
+        })
+    }
+});
+
 export default app
