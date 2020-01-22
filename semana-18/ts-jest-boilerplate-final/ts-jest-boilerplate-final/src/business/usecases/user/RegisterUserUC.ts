@@ -1,8 +1,8 @@
 import { User } from "../../entities/User";
-import { AuthGateway } from "../../gateways/AuthGateway";
-import { UserGateway } from "../../gateways/UserGateway";
+import { UserGateway } from "../../gateways/user/UserGateway";
 import { CryptoGateway } from "../../gateways/CryptoGateway";
 import { IdGeneratorGateway } from "../../gateways/IdGeneratorGateway";
+import { UserTokenGateway } from "../../gateways/user/UserTokenGateway";
 
 
 export class RegisterUserUC {
@@ -10,7 +10,7 @@ export class RegisterUserUC {
         private userGateway: UserGateway,
         private cryptoGateway: CryptoGateway,
         private idGenerator: IdGeneratorGateway,
-        private auth: AuthGateway
+        private auth: UserTokenGateway
     ) { }
 
     async execute(input: RegisterUserUCInput): Promise<string> {
@@ -20,8 +20,8 @@ export class RegisterUserUC {
         const user = new User(id, input.name, input.email, password);
        
 
-        await this.userGateway.registerUser(user);
-        const token = this.auth.createToken(user.getId(), user.getEmail());
+        await this.userGateway.createUser(user);
+        const token = this.auth.generateToken(user.getId());
 
         return token; 
     }

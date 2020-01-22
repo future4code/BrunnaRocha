@@ -2,6 +2,9 @@ import express, {Request, Response, request} from 'express'
 import { UserDatabase } from '../data/UserDatabase';
 import { BcryptService } from '../business/service/cryptography/BcryptService';
 import { JwtAuthService } from '../business/service/auth/jwtAuthService';
+import { V4IdGenerator } from '../business/service/auth/V4IdGenerator';
+import { RegisterUserUC } from '../business/usecases/user/RegisterUserUC';
+import { LoginUC } from '../business/usecases/user/LoginUC';
 
 
 const app = express()
@@ -9,14 +12,14 @@ app.use(express.json()) // Linha mágica (middleware)
 
 app.post("/signup", async (req: Request, res: Response) => {
     try {
-        const createUserUC = new createUserUC(
+        const createUser = new RegisterUserUC (
             new UserDatabase(),
             new BcryptService(),
-            new v4IdGenerator(),
+            new V4IdGenerator(),
             new JwtAuthService()
         );
 
-        const result = await createUserUC.execute({
+        const result = await createUser.execute({
             name: req.body.name,
             email: req.body.email,
             password: req.body.password
@@ -38,7 +41,7 @@ app.post("/login", async (req: Request, res: Response) => {
             new JwtAuthService()
         )
 
-        const result = await loginUseCase.execute({
+        const result = await loginUC.execute({
             email: req.body.email,
             password: req.body.password
         })

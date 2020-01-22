@@ -6,7 +6,7 @@ export class FollowUserUseCase {
     async execute(input: FollowUserInput) {
         await this.verifyUserExists(input)
 
-        await this.userGateway.createUserRelation(input.followerId, input.followedId)
+        //await this.userGateway.createUserRelation(input.followerId, input.followedId)
     }
 
     async verifyUserExists(input: FollowUserInput) {

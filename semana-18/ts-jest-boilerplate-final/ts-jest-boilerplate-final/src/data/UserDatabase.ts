@@ -58,7 +58,7 @@ export class UserDatabase implements UserGateway {
             email: user.getEmail(),
             password: user.getPassword()
         })
-        .into("user_FutureBook")
+        .into("FutureBook_user")
     }
 
     async verifyUserExists(id: string): Promise<boolean> {
@@ -69,4 +69,5 @@ export class UserDatabase implements UserGateway {
 
         return Boolean(returnedUser);
     }
+
 }
