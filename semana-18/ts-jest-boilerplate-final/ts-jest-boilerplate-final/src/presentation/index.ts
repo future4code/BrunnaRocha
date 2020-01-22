@@ -1,6 +1,7 @@
 import express, {Request, Response, request} from 'express'
 import { UserDatabase } from '../data/UserDatabase';
 import { BcryptService } from '../business/service/cryptography/BcryptService';
+import { JwtAuthService } from '../business/service/auth/jwtAuthService';
 
 
 const app = express()
