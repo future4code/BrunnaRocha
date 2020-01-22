@@ -7,7 +7,7 @@ import { JwtAuthService } from '../business/service/auth/jwtAuthService';
 const app = express()
 app.use(express.json()) // Linha mágica (middleware)
 
-app.post("/signup", async (req: request, res: Response) => {
+app.post("/signup", async (req: Request, res: Response) => {
     try {
         const createUserUC = new createUserUC(
             new UserDatabase(),
