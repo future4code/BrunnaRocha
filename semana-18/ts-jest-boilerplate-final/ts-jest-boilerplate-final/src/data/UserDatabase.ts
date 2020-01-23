@@ -70,4 +70,13 @@ export class UserDatabase implements UserGateway {
         return Boolean(returnedUser);
     }
 
+    public async getAllUsersUC(): Promise<User[]> {
+        const query = this.connection.raw("SELECT * FROM FutureBook_user;");
+        const usersFromDb = await query;
+        return usersFromDb[0].map(
+            (user: any) =>
+                new User(user.id, user.name, user.email, user.password)
+        );
+    }
+
 }

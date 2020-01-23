@@ -5,4 +5,5 @@ export interface UserGateway {
     getUserByEmail(email: string): Promise<User>;
     createUser(user: User): Promise<void>;
     verifyUserExists(id: string): Promise<boolean>;
+    getAllUsersUC(): Promise<User[]>;
 }

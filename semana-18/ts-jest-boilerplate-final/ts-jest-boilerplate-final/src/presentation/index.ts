@@ -5,6 +5,7 @@ import { JwtAuthService } from '../business/service/auth/jwtAuthService';
 import { V4IdGenerator } from '../business/service/auth/V4IdGenerator';
 import { RegisterUserUC } from '../business/usecases/user/RegisterUserUC';
 import { LoginUC } from '../business/usecases/user/LoginUC';
+import { GetAllUsersUC } from '../business/usecases/user/GetAllUsersUC';
 
 
 const app = express()
@@ -52,6 +53,18 @@ app.post("/login", async (req: Request, res: Response) => {
         res.status(400).send({
             erroMessage: err.message
         })
+    }
+});
+
+app.get("/getAllUsers", async (req: Request, res: Response) => {
+    try {
+        const getAllUsersUC = new GetAllUsersUC(new UserDatabase());
+        const result = await getAllUsersUC.execute();
+        res.status(200).send(result);
+    } catch (err) {
+        res.status(400).send({
+            errorMessage: err.message
+        });
     }
 });
 
