@@ -17,7 +17,7 @@ export class UserDatabase implements UserGateway {
 
     public async getUserById(id: string): Promise<User> {
         const query = await this.connection.raw(
-            `SELECT * FROM user_FutureBook WHERE id='${id}';`
+            `SELECT * FROM FutureBook_user WHERE id='${id}';`
         );
 
         const returnedUser = query[0] [0];
@@ -79,4 +79,10 @@ export class UserDatabase implements UserGateway {
         );
     }
 
+    async createUserRelation(followerId: string, followedId: string): Promise<void> {
+        await this.connection.raw(`
+        INSERT TO FutureBook_users_relations (follower_id, followed_id)
+        VALUES {"${followerId}", "${followedId}"}
+        `)
+    }
 }

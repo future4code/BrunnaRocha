@@ -6,10 +6,7 @@ export class FollowUserUC {
     async execute(input: FollowUserInput) {
         await this.verifyUsersExists(input)
 
-        
-
-
-
+        await this.userGateway.createUserRelation(input.followedId, input.followedId)
     }
     
 

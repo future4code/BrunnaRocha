@@ -6,10 +6,15 @@ import { V4IdGenerator } from '../business/service/auth/V4IdGenerator';
 import { RegisterUserUC } from '../business/usecases/user/RegisterUserUC';
 import { LoginUC } from '../business/usecases/user/LoginUC';
 import { GetAllUsersUC } from '../business/usecases/user/GetAllUsersUC';
+import { FollowUserUC, FollowUserInput } from '../business/usecases/user/FollowUserUC';
 
 
 const app = express()
 app.use(express.json()) // Linha mágica (middleware)
+
+const getTokenFromHeaders = (headers: any): string => {
+    return (headers["auth"] as string) || "";
+};
 
 app.post("/signup", async (req: Request, res: Response) => {
     try {
@@ -65,6 +70,34 @@ app.get("/getAllUsers", async (req: Request, res: Response) => {
         res.status(400).send({
             errorMessage: err.message
         });
+    }
+});
+
+function authenticate(req: Request) {
+    const jwtAuthService = new JwtAuthService()
+    return jwtAuthService.getUserIdFromToken(getTokenFromHeaders(req.headers))
+}
+
+app.post("/users/follow", async (req: Request, res: Response) => {
+    try {
+        const userId = authenticate(req)
+        const followUser = new FollowUserUC (
+            new UserDatabase(),
+        );
+
+        const input: FollowUserInput = {
+            followedId: userId,
+            followerId: req.body.userToFollow,
+        }    
+
+        await followUser.execute(input)
+        res.status(200).send({
+            message: "Usuário seguido com sucesso!"
+        });
+    } catch (err) {
+        res.status(400).send({
+            errorMessage: err.message
+        })
     }
 });
 
