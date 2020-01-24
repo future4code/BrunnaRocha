@@ -6,15 +6,15 @@ export class FollowUserUC {
     async execute(input: FollowUserInput) {
         await this.verifyUsersExists(input)
 
-        await this.userGateway.createUserRelation(input.followedId, input.followedId)
+        await this.userGateway.createUserRelation(input.followerId, input.followedId)
     }
     
 
 
     async verifyUsersExists(input: FollowUserInput) {
         await Promise.all([
-        this.userGateway.verifyUserExists(input.followedId),
-        this.userGateway.verifyUserExists(input.followerId)
+        this.userGateway.verifyUserExists(input.followerId),
+        this.userGateway.verifyUserExists(input.followedId)
         ])
     }
 }    

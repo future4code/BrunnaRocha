@@ -86,8 +86,8 @@ app.post("/users/follow", async (req: Request, res: Response) => {
         );
 
         const input: FollowUserInput = {
-            followedId: userId,
-            followerId: req.body.userToFollow,
+            followerId: userId,
+            followedId: req.body.userToFollow
         }    
 
         await followUser.execute(input)
