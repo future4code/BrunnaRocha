@@ -2,7 +2,7 @@ export class CreatePost {
     constructor (
         private photo: string,
         private description: string,
-        private criationdate: Date = new Date(),
+        private creationdate: Date = new Date(),
         private type: string
     ) {}
 
@@ -14,8 +14,8 @@ export class CreatePost {
         return this.description;
     }
 
-    public getCriationdate(): Date {
-        return this.criationdate;
+    public getCreationdate(): Date {
+        return this.creationdate;
     }
 
     public getType(): string {
