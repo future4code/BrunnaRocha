@@ -1,4 +1,7 @@
 export class CreatePost {
+  getUserId(): unknown {
+    throw new Error("Method not implemented.");
+  }
     constructor (
         private photo: string,
         private description: string,
