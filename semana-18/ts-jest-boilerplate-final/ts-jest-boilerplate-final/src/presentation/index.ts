@@ -7,6 +7,7 @@ import { RegisterUserUC } from '../business/usecases/user/RegisterUserUC';
 import { LoginUC } from '../business/usecases/user/LoginUC';
 import { GetAllUsersUC } from '../business/usecases/user/GetAllUsersUC';
 import { FollowUserUC, FollowUserInput } from '../business/usecases/user/FollowUserUC';
+import { UnfollowUserUC, UnfollowUserInput } from '../business/usecases/user/UnfollowUserUC';
 
 
 const app = express()
@@ -93,6 +94,29 @@ app.post("/users/follow", async (req: Request, res: Response) => {
         await followUser.execute(input)
         res.status(200).send({
             message: "Usuário seguido com sucesso!"
+        });
+    } catch (err) {
+        res.status(400).send({
+            errorMessage: err.message
+        })
+    }
+});
+
+app.delete("/users/unfollow", async (req: Request, res: Response) => {
+    try {
+        const userId = authenticate(req)
+        const unfollowUser = new UnfollowUserUC (
+            new UserDatabase(),
+        );
+
+        const input: UnfollowUserInput = {
+            followerId: userId,
+            followedId: req.body.userToUnfollow
+        }    
+
+        await unfollowUser.execute(input)
+        res.status(200).send({
+            message: "Usuário excluído da sua rede com sucesso!"
         });
     } catch (err) {
         res.status(400).send({

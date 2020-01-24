@@ -6,5 +6,6 @@ export interface UserGateway {
     createUser(user: User): Promise<void>;
     verifyUserExists(id: string): Promise<boolean>;
     getAllUsersUC(): Promise<User[]>;
-    createUserRelation(followerId: string, followedId: string): Promise<void>
+    createUserRelation(followerId: string, followedId: string): Promise<void>;
+    undoUserRelation(followerId: string, followedId: string): Promise<void>
 }
