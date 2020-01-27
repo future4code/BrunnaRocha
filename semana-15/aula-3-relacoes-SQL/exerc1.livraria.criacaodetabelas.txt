@@ -1,0 +1,45 @@
+-- Criar tabela de autores
+CREATE TABLE autores (
+ id INT,
+ primeiro_nome VARCHAR(255),
+ ultimo_nome VARCHAR(255),
+ nacionalidade VARCHAR(255),
+ PRIMARY KEY (id)
+);
+
+-- Criar tabela de editoras
+CREATE TABLE editoras (
+ id INT,
+ nome VARCHAR(255),
+ cidade VARCHAR(255),
+ fundacao date,
+ PRIMARY KEY (id)
+);
+
+-- Criar tabela de usuários
+CREATE TABLE usuarios (
+ id INT,
+ primeiro_nome VARCHAR(255),
+ ultimo_nome VARCHAR(255),
+ nacionalidade VARCHAR(255),
+ data_nascimento date,
+ PRIMARY KEY (id)
+);
+
+-- Criar tabela de livros que recebe o id da tabela de autores e o is da tabela de editoras
+CREATE TABLE livros (
+ id INT,
+ titulo VARCHAR(255),
+ autor_id INT,
+ editora_id INT,
+ ano date,
+ PRIMARY KEY (id),
+ FOREIGN KEY (autor_id)REFERENCES autores(id), FOREIGN KEY (editora_id)REFERENCES editoras(id) 
+);
+
+-- Criar tabela de usuarios_livros que cria um id para usuarios_id e um para livro_id
+CREATE TABLE usuarios_livros (
+ usuario_id INT,
+ livro_id INT,
+ PRIMARY KEY (usuario_id, livro_id)
+);

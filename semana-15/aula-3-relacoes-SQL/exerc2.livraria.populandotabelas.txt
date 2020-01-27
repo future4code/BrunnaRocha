@@ -1,0 +1,343 @@
+
+-- Populando o banco de autores
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (1,'Monica','Ali');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (2,'Robert C.','Atkins');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (3,'Linwood','Barclay');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (4,'John','Boyne');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (5,'Dan','Brown');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (6,'Bill','Bryson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (7,'Eric','Carle');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (8,'Jeremy','Clarkson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (9,'Paulo','Coelho');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (10,'Louis','De Bernieres');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (11,'Julia','Donaldson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (12,'Kim','Edwards');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (13,'Sebastian','Faulks');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (14,'Helen','Fielding');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (15,'Dawn','French');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (16,'Arthur','Golden');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (17,'John','Grisham');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (18,'Mark','Haddon');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (19,'Joanne','Harris');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (20,'Victoria','Hislop');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (21,'Khaled','Hosseini');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (22,'Conn & Iggulden','Iggulden');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (23,'Peter','Kay');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (24,'Marian','Keyes');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (25,'Sophie','Kinsella');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (26,'Stieg','Larsson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (27,'Nigella','Lawson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (28,'Harper','Lee');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (29,'Andrea','Levy');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (30,'Marina','Lewycka');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (31,'Yann','Martel');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (32,'Alexander','McCall Smith');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (33,'Frank','McCourt');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (34,'Ian','McEwan');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (35,'Gillian','McKeith');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (36,'Paul','McKenna');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (37,'Stephenie','Meyer');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (38,'Michael','Moore');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (39,'Kate','Morton');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (40,'Kate','Mosse');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (41,'Audrey','Niffenegger');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (42,'Paul','O''Grady');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (43,'Barack','Obama');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (44,'Jamie','Oliver');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (45,'Sharon','Osbourne');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (46,'Tony','Parsons');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (47,'Dave','Pelzer');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (48,'Philip','Pullman');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (49,'J. K.','Rowling');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (50,'Jed','Rubenfeld');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (51,'J.D.','Salinger');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (52,'Ben','Schott');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (53,'Alice','Sebold');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (54,'Delia','Smith');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (55,'Zadie','Smith');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (56,'Pamela','Stephenson');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (57,'Lynne','Truss');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (58,'Lauren','Weisberger');
+INSERT INTO autores(id,primeiro_nome,ultimo_nome) VALUES (59,'Markus','Zusak');
+
+-- Populando o banco de editoras
+INSERT INTO editoras VALUES
+(1,'Black Swan','Illinois','1964-02-11 00:00:00'),
+(2,'Vermilion','New York','1971-03-01 00:00:00'),
+(3,'Orion (an Imprint of The Orion','California','1989-12-05 00:00:00'),
+(4,'Definitions','Alabama','1973-10-28 00:00:00'),
+(5,'Corgi Books','Indiana','1981-12-10 00:00:00'),
+(6,'Bantam Press','Texas','1968-06-25 00:00:00'),
+(7,'Puffin Books','Indiana','1961-12-10 00:00:00'),
+(8,'Penguin Books','California','1977-03-03 00:00:00'),
+(9,'Thorsons','California','2000-04-01 00:00:00'),
+(10,'Minerva','Texas','1993-09-15 00:00:00'),
+(11,'Macmillan Children''s Books','Arizona','1966-09-17 00:00:00'),
+(12,'Vintage','South Carolina','1992-05-28 00:00:00'),
+(13,'Picador','Louisiana','1992-02-14 00:00:00'),
+(14,'Century','Minnesota','1986-04-27 00:00:00'),
+(15,'Arrow Books','New Mexico','1970-09-29 00:00:00'),
+(16,'Headline Review','Florida','2001-11-02 00:00:00'),
+(17,'Bloomsbury Publishing PLC','Florida','1966-11-24 00:00:00'),
+(18,'HarperCollins Publishers','Florida','1977-12-31 00:00:00'),
+(19,'Quercus','Arizona','1983-08-10 00:00:00'),
+(20,'Quercus Publishing Plc','Washington','1991-09-02 00:00:00'),
+(21,'Chatto & Windus','Oregon','1987-07-29 00:00:00'),
+(22,'Canongate Books','Ohio','1975-05-18 00:00:00'),
+(23,'Abacus','Missouri','1959-06-20 00:00:00'),
+(24,'Flamingo','California','1974-02-14 00:00:00'),
+(25,'Michael Joseph','Connecticut','1983-02-04 00:00:00'),
+(26,'ATOM','Georgia','1980-03-11 00:00:00'),
+(27,'Pan Books','California','1969-09-24 00:00:00'),
+(28,'Time Warner Books','Georgia','1966-12-30 00:00:00'),
+(29,'Point','Georgia','1973-01-25 00:00:00'),
+(30,'BBC Books (Random House)','New York','1960-05-13 00:00:00'),
+(31,'Profile Books','Georgia','1969-10-21 00:00:00');
+
+ALTER TABLE livros
+MODIFY COLUMN id int NOT NULL AUTO_INCREMENT;
+
+-- Populando o banco de livros
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Brick Lane',1,1,'2004-05-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Dr. Atkins'' New Diet Revolution:The No-hunger, Luxurious Weight Loss P',2,2,'2003-01-02');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('No Time for Goodbye',3,3,'2008-06-12');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Boy in the Striped Pyjamas,The',4,4,'2007-02-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Da Vinci Code,The',5,5,'2004-03-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Angels and Demons',5,5,'2003-07-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Deception Point',5,5,'2004-05-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Digital Fortress',5,5,'2004-03-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Lost Symbol,The',5,6,'2009-09-15');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Lost Symbol,The',5,5,'2010-07-22');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Short History of Nearly Everything,A',6,1,'2004-06-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Notes from a Small Island',6,1,'1996-08-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Down Under',6,1,'2001-08-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Very Hungry Caterpillar,The:The Very Hungry Caterpillar',7,7,'1994-09-29');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('World According to Clarkson,The',8,8,'2005-05-26');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('I Know You Got Soul',8,8,'2006-05-25');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Alchemist,The:A Fable About Following Your Dream',9,9,'1999-09-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Captain Corelli''s Mandolin',10,10,'1995-06-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Gruffalo,The',11,11,'2009-03-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Memory Keeper''s Daughter,The',12,8,'2007-04-26');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Birdsong',13,12,'1994-07-18');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Bridget Jones: The Edge of Reason',14,13,'2000-06-15');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Bridget Jones''s Diary:A Novel',14,13,'1997-06-20');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Dear Fatty',15,14,'2008-10-09');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Memoirs of a Geisha',16,12,'1998-06-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Broker,The',17,15,'2005-08-27');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Summons,The',17,15,'2002-09-28');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Curious Incident of the Dog in the Night-time,The',18,12,'2004-04-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Spot of Bother,A',18,12,'2007-06-07');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Chocolat',19,1,'2000-03-02');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Island,The',20,16,'2006-04-10');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Kite Runner,The',21,17,'2004-06-07');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Thousand Splendid Suns,A',21,17,'2007-05-22');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Dangerous Book for Boys,The',22,18,'2006-06-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Sound of Laughter,The',23,14,'2006-10-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Anybody Out There?',24,8,'2007-02-08');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Undomestic Goddess,The',25,1,'2006-01-02');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Can You Keep a Secret?',25,1,'2003-03-17');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Girl with the Dragon Tattoo,The:Millennium Trilogy',26,19,'2008-07-24');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Girl Who Played With Fire,The:Millennium Trilogy',26,20,'2010-07-29');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Girl Who Kicked the Hornets'' Nest,The:Millennium Trilogy',26,20,'2010-04-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Nigella Express',27,21,'2007-09-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('To Kill a Mockingbird',28,15,'1989-10-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Small Island',29,16,'2004-09-13');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Short History of Tractors in Ukrainian,A',30,8,'2006-03-02');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Life of Pi',31,22,'2003-05-17');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('No.1 Ladies'' Detective Agency,The:No.1 Ladies'' Detective Agency S.',32,23,'2003-06-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Angela''s Ashes:A Memoir of a Childhood',33,24,'1997-05-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Atonement',34,12,'2002-05-02');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('You are What You Eat:The Plan That Will Change Your Life',35,25,'2004-06-17');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('I Can Make You Thin',36,6,'2005-01-17');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Twilight',37,26,'2007-03-22');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('New Moon',37,26,'2007-09-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Eclipse',37,26,'2008-07-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Breaking Dawn',37,26,'2008-08-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Stupid White Men:...and Other Sorry Excuses for the State of the Natio',38,8,'2002-10-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('House at Riverton,The',39,27,'2007-06-15');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Labyrinth',40,3,'2006-01-11');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Time Traveler''s Wife,The',41,12,'2004-05-29');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('At My Mother''s Knee ...:and Other Low Joints',42,6,'2008-09-24');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Dreams from My Father:A Story of Race and Inheritance',43,22,'2008-06-05');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Jamie''s 30-minute Meals',44,25,'2010-09-30');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Jamie''s Italy',44,25,'2005-10-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Jamie''s Ministry of Food:Anyone Can Learn to Cook in 24 Hours',44,25,'2008-10-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Jamie at Home:Cook Your Way to the Good Life',44,25,'2007-09-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Return of the Naked Chef,The',44,25,'2000-03-30');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Happy Days with the Naked Chef',44,25,'2001-09-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Sharon Osbourne Extreme:My Autobiography',45,28,'2005-10-03');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Man and Boy',46,18,'2000-03-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Child Called It,A',47,3,'2001-01-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Northern Lights:His Dark Materials S.',48,29,'1998-10-23');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Subtle Knife,The:His Dark Materials S.',48,29,'1998-10-16');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Amber Spyglass,The:His Dark Materials S.',48,29,'2001-09-14');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Philosopher''s Stone',49,17,'1997-06-26');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Chamber of Secrets',49,17,'1999-04-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Order of the Phoenix',49,17,'2003-06-21');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Half-blood Prince:Children''s Edition',49,17,'2005-07-16');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Deathly Hallows',49,17,'2007-07-21');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Prisoner of Azkaban',49,17,'2000-04-01');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Goblet of Fire',49,17,'2001-07-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Goblet of Fire',49,17,'2000-07-08');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Deathly Hallows',49,17,'2007-07-21');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Tales of Beedle the Bard,The',49,17,'2008-12-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Order of the Phoenix',49,17,'2004-07-10');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Harry Potter and the Half-blood Prince',49,17,'2005-07-16');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Interpretation of Murder,The',50,16,'2007-01-15');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Catcher in the Rye,The',51,8,'1994-08-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Schott''s Original Miscellany',52,17,'2002-11-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Lovely Bones,The',53,13,'2009-12-04');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Delia''s How to Cook:(Bk.1)',54,30,'1998-10-12');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Delia''s How to Cook:(Bk.2)',54,30,'1999-12-09');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('White Teeth',55,8,'2001-01-25');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Billy Connolly',56,18,'2002-07-08');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Eats, Shoots and Leaves:The Zero Tolerance Approach to Punctuation',57,31,'2003-11-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Devil Wears Prada,The',58,18,'2003-10-06');
+INSERT INTO livros(titulo,autor_id,editora_id,ano) VALUES ('Book Thief,The',59,1,'2008-01-01');
+
+-- Populando o banco de usuários
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (1, 'Brod', 'Tutill', 'South Africa', '1999/06/29');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (2, 'Brunhilda', 'Mayhow', 'France', '1986/08/22');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (3, 'Annis', 'Pughsley', 'Ukraine', '2000/12/10');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (4, 'Willem', 'Millthorpe', 'Hong Kong', '1990/12/17');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (5, 'Violet', 'Bairstow', 'Poland', '1988/11/22');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (6, 'Rita', 'Simison', 'South Africa', '2000/02/24');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (7, 'Antonie', 'Magne', 'Russia', '1982/09/18');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (8, 'Nikaniki', 'Kiljan', 'Indonesia', '1982/09/17');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (9, 'Eal', 'Le Surf', 'Japan', '1996/05/30');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (10, 'Gayle', 'Binner', 'Russia', '1999/01/02');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (11, 'Lana', 'Yarrow', 'Brazil', '1984/08/31');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (12, 'Linda', 'Cardenosa', 'Sweden', '1981/01/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (13, 'Paquito', 'Gregore', 'Ecuador', '1996/04/16');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (14, 'Lamar', 'Tiddeman', 'Mozambique', '1998/07/31');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (15, 'Karyl', 'Abramow', 'Indonesia', '1985/03/02');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (16, 'Lynette', 'Acomb', 'Russia', '1992/05/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (17, 'Dillie', 'Reimers', 'Greece', '1994/12/20');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (18, 'Edythe', 'Outhwaite', 'Vietnam', '1997/01/03');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (19, 'Terencio', 'Breston', 'Brazil', '1997/03/24');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (20, 'Adrianne', 'Munt', 'Brazil', '1981/02/19');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (21, 'Fitzgerald', 'Wellesley', 'Czech Republic', '2000/01/29');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (22, 'Guinna', 'Collocott', 'Mongolia', '1990/04/07');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (23, 'Avis', 'Sterman', 'Poland', '1985/07/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (24, 'Arlana', 'O''Sherin', 'Philippines', '1986/10/08');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (25, 'Kim', 'Blazic', 'Peru', '1992/09/13');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (26, 'Pierce', 'Reiach', 'Brazil', '1991/07/06');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (27, 'Lannie', 'Jakubczyk', 'South Korea', '1989/11/14');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (28, 'Scott', 'Hache', 'Philippines', '1986/07/18');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (29, 'Vanya', 'Barlie', 'Indonesia', '1994/08/28');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (30, 'Natty', 'Jacquemot', 'Micronesia', '1982/09/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (31, 'Bert', 'Mathouse', 'United Kingdom', '2000/08/09');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (32, 'Valaree', 'Mildner', 'Japan', '1990/01/30');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (33, 'Flo', 'Appleford', 'United States', '1987/06/16');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (34, 'Jacquette', 'Bermingham', 'Japan', '1992/11/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (35, 'Olvan', 'Theodore', 'Czech Republic', '1997/07/04');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (36, 'Andrea', 'Nance', 'Russia', '2000/08/11');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (37, 'Salvatore', 'Frangione', 'Denmark', '1992/05/09');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (38, 'Cobbie', 'Andreu', 'Poland', '1998/07/14');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (39, 'Pierrette', 'Doeg', 'China', '2000/06/20');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (40, 'Ame', 'Inglese', 'Indonesia', '1989/06/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (41, 'Christean', 'Blackwood', 'United States', '1990/10/01');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (42, 'Millicent', 'Shears', 'Brazil', '1981/06/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (43, 'Vaughan', 'Atte-Stone', 'Estonia', '1994/01/28');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (44, 'Kellie', 'Jacketts', 'Norway', '2000/12/12');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (45, 'Merv', 'Blakeman', 'Indonesia', '1993/11/03');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (46, 'Taite', 'Giacobazzi', 'Japan', '1992/05/09');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (47, 'Matty', 'Abrahamson', 'United States', '1997/06/01');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (48, 'Blinni', 'Ambrozik', 'China', '1999/02/20');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (49, 'Harman', 'Cusiter', 'China', '1984/05/01');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (50, 'Maurise', 'Hakey', 'Laos', '1999/04/20');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (51, 'Rutherford', 'Sissel', 'Japan', '1992/01/14');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (52, 'Vinson', 'Edgeson', 'Brazil', '1994/06/02');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (53, 'Shay', 'Reisen', 'Poland', '1997/05/09');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (54, 'Orella', 'Whitlock', 'Russia', '1997/10/14');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (55, 'Darsey', 'Carnall', 'Russia', '1982/04/11');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (56, 'Herculie', 'Maryott', 'Panama', '1984/02/15');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (57, 'Isac', 'Croxley', 'Nigeria', '1993/12/29');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (58, 'Thibaud', 'Lavarack', 'Thailand', '1983/09/04');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (59, 'Murry', 'MacNeachtain', 'Italy', '1999/05/21');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (60, 'Hadley', 'Clitheroe', 'Indonesia', '1993/10/22');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (61, 'Gleda', 'Gaenor', 'Portugal', '1996/11/18');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (62, 'Constantino', 'Tesseyman', 'Indonesia', '1985/07/03');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (63, 'Joseito', 'Dumingo', 'Egypt', '1992/07/21');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (64, 'Legra', 'Dugald', 'Russia', '1992/08/29');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (65, 'Ermina', 'Belvin', 'Portugal', '2000/04/10');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (66, 'Devondra', 'Walshaw', 'United States', '1999/11/16');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (67, 'Bordy', 'Skotcher', 'Colombia', '1991/02/25');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (68, 'Jolyn', 'Odams', 'Russia', '1988/08/25');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (69, 'Doris', 'Phear', 'Russia', '1982/06/28');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (70, 'Gaelan', 'Locker', 'France', '1988/08/10');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (71, 'Cele', 'Fedynski', 'Indonesia', '1991/10/03');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (72, 'Bess', 'Chilles', 'Portugal', '1994/06/18');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (73, 'Elston', 'Berthome', 'Greece', '1997/03/13');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (74, 'Aurlie', 'Barlace', 'Dominican Republic', '1982/09/24');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (75, 'Perceval', 'Matsell', 'Sweden', '1992/06/04');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (76, 'Myriam', 'Hanvey', 'Russia', '1986/05/19');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (77, 'Joceline', 'Meas', 'China', '1994/10/26');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (78, 'Dean', 'Prendeguest', 'Argentina', '1999/05/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (79, 'Hayes', 'Defond', 'Russia', '1989/11/25');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (80, 'Carey', 'Sheron', 'Bosnia and Herzegovina', '1981/05/11');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (81, 'Isiahi', 'Milthorpe', 'United States', '1996/06/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (82, 'Gretchen', 'O'' Mullan', 'China', '1983/10/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (83, 'Paulette', 'Eldrett', 'Mauritius', '1986/12/19');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (84, 'Monte', 'Radley', 'Pakistan', '1988/04/27');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (85, 'Dieter', 'Skelly', 'Jordan', '1983/07/04');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (86, 'Tucky', 'Bazelle', 'Indonesia', '1990/02/05');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (87, 'Stephie', 'Tremoulet', 'Ukraine', '1997/02/26');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (88, 'Pepe', 'Fraczkiewicz', 'Haiti', '1986/03/24');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (89, 'Theobald', 'William', 'Kenya', '1990/07/23');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (90, 'Kippie', 'Brunel', 'Greece', '1988/09/24');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (91, 'Marna', 'Hannon', 'Chile', '1984/10/25');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (92, 'Francesco', 'Corbie', 'Portugal', '1981/11/22');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (93, 'Bobbe', 'Reese', 'France', '1993/05/13');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (94, 'Alison', 'Baines', 'United States', '1998/02/26');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (95, 'Bennett', 'Broadley', 'Brazil', '1984/06/09');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (96, 'Gwennie', 'Edie', 'Ukraine', '1989/06/30');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (97, 'Elset', 'Skocroft', 'South Africa', '1980/12/18');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (98, 'Alvis', 'McKeeman', 'Bolivia', '1992/01/22');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (99, 'Marita', 'Ferruzzi', 'Brazil', '1996/10/07');
+insert into usuarios (id, primeiro_nome, ultimo_nome, nacionalidade, data_nascimento) values (100, 'Suzann', 'Sydenham', 'Macedonia', '1999/08/02');
+
+-- Populando o banco de livros alugados
+insert into usuarios_livros (usuario_id, livro_id) values (20, 16);
+insert into usuarios_livros (usuario_id, livro_id) values (13, 3);
+insert into usuarios_livros (usuario_id, livro_id) values (9, 20);
+insert into usuarios_livros (usuario_id, livro_id) values (29, 16);
+insert into usuarios_livros (usuario_id, livro_id) values (1, 31);
+insert into usuarios_livros (usuario_id, livro_id) values (24, 24);
+insert into usuarios_livros (usuario_id, livro_id) values (11, 23);
+insert into usuarios_livros (usuario_id, livro_id) values (5, 20);
+insert into usuarios_livros (usuario_id, livro_id) values (30, 6);
+insert into usuarios_livros (usuario_id, livro_id) values (8, 8);
+insert into usuarios_livros (usuario_id, livro_id) values (22, 11);
+insert into usuarios_livros (usuario_id, livro_id) values (27, 33);
+insert into usuarios_livros (usuario_id, livro_id) values (8, 20);
+insert into usuarios_livros (usuario_id, livro_id) values (32, 16);
+insert into usuarios_livros (usuario_id, livro_id) values (21, 30);
+insert into usuarios_livros (usuario_id, livro_id) values (14, 9);
+insert into usuarios_livros (usuario_id, livro_id) values (33, 21);
+insert into usuarios_livros (usuario_id, livro_id) values (27, 19);
+insert into usuarios_livros (usuario_id, livro_id) values (5, 23);
+insert into usuarios_livros (usuario_id, livro_id) values (20, 22);
+insert into usuarios_livros (usuario_id, livro_id) values (16, 15);
+insert into usuarios_livros usuario_id, livro_id) values (21, 23);
+insert into usuarios_livros (usuario_id, livro_id) values (15, 16);
+insert into usuarios_livros (usuario_id, livro_id) values (23, 29);
+insert into usuarios_livros (usuario_id, livro_id) values (27, 32);
+insert into usuarios_livros (usuario_id, livro_id) values (18, 26);
+insert into usuarios_livros (usuario_id, livro_id) values (11, 30);
+insert into usuarios_livros (usuario_id, livro_id) values (10, 19);
+insert into usuarios_livros (usuario_id, livro_id) values (19, 25);
+insert into usuarios_livros (usuario_id, livro_id) values (29, 10);
+insert into usuarios_livros (usuario_id, livro_id) values (13, 1);
+insert into usuarios_livros (usuario_id, livro_id) values (20, 20);
+insert into usuarios_livros (usuario_id, livro_id) values (24, 30);
+insert into usuarios_livros (usuario_id, livro_id) values (5, 31);
+insert into usuarios_livros (usuario_id, livro_id) values (28, 27);
+insert into usuarios_livros (usuario_id, livro_id) values (5, 22);
+insert into usuarios_livros (usuario_id, livro_id) values (5, 2);
+insert into usuarios_livros (usuario_id, livro_id) values (10, 23);
+insert into usuarios_livros (usuario_id, livro_id) values (23, 11);
+insert into usuarios_livros(usuario_id, livro_id) values (14, 31);
+insert into usuarios_livros (usuario_id, livro_id) values (27, 2);
+insert into usuarios_livros (usuario_id, livro_id) values (33, 22);
+insert into usuarios_livros (usuario_id, livro_id) values (9, 8);
