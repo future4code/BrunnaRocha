@@ -1,0 +1,19 @@
+-- exercício 1a)
+SELECT nome, salario
+FROM funcionarios
+WHERE salario > 2000;
+
+-- exercício 1b)
+SELECT nome, data_contratacao
+FROM funcionarios
+WHERE data_contratacao >= "2004-01-01";
+
+-- exercício 1c)
+SELECT nome, data_nascimento
+FROM funcionarios
+WHERE nome LIKE "%ei%";
+
+-- exercício 1d)
+SELECT nome, salario, data_nascimento
+FROM funcionarios
+WHERE salario > 1300 AND YEAR(data_nascimento) < 1998;

@@ -1,0 +1,17 @@
+CREATE TABLE correntistasF4 (
+id int PRIMARY KEY,
+primeiro_nome varchar(255) NOT NULL,
+ultimo_nome varchar(255) NOT NULL,
+email varchar(255),
+genero varchar(255),
+conta_corrente int,
+pais varchar(255),
+aniversario date
+);
+
+INSERT INTO correntistasF4(id, primeiro_nome, ultimo_nome, email, genero, conta_corrente, pais, aniversario)
+VALUES (1, "Brunna", "Rocha", "brunna123@gmail.com", "F", 20000, "Brazil", "1982-09-13"),
+(2, "Eliseu", "Habibi", "zeu456@gmail.com", "M", 32500, "Brazil", "1985-07-12"),
+(3, "KLysman", "Muller", "klysman396@gmail.com", "M", 12873, "Alemanha", "1998-02-05"),
+(4, "Sharapova", "Swerpesnov", "shasha654@gmail.com", "F", 15873, "Rússia", "1975-01-09"),
+(5, "Luigi", "Supernitendo", "luigi321@gmail.com", "M", 14652, "Itália", "1982-03-26");
