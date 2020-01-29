@@ -3,7 +3,10 @@ export class User {
         private id: string,
         private name: string,
         private email: string,
-        private password: string
+        private password: string,
+        private birthdate: Date,
+        private age: string,
+        private photo: string
     ) {}
 
     public getId(): string {
@@ -20,6 +23,18 @@ export class User {
 
     public getPassword(): string {
         return this.password;
+    }
+
+    public getBirthdate(): Date {
+        return this.birthdate;
+    }
+
+    public getAge(): string {
+        return this.age
+    }
+
+    public getPhoto(): string {
+        return this.photo
     }
 
 }

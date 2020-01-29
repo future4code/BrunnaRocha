@@ -6,8 +6,7 @@ import { V4IdGenerator } from '../business/service/auth/V4IdGenerator';
 import { RegisterUserUC } from '../business/usecases/user/RegisterUserUC';
 import { LoginUC } from '../business/usecases/user/LoginUC';
 import { GetAllUsersUC } from '../business/usecases/user/GetAllUsersUC';
-import { FollowUserUC, FollowUserInput } from '../business/usecases/user/FollowUserUC';
-import { UnfollowUserUC, UnfollowUserInput } from '../business/usecases/user/UnfollowUserUC';
+
 
 
 const app = express()
@@ -29,7 +28,10 @@ app.post("/signup", async (req: Request, res: Response) => {
         const result = await createUser.execute({
             name: req.body.name,
             email: req.body.email,
-            password: req.body.password
+            password: req.body.password,
+            birthdate: req.body.birthdate,
+            age: req.body.age,
+            photo: req.body.photo
         });
         res.status(200).send(result)
         
@@ -78,51 +80,5 @@ function authenticate(req: Request) {
     const jwtAuthService = new JwtAuthService()
     return jwtAuthService.getUserIdFromToken(getTokenFromHeaders(req.headers))
 }
-
-app.post("/users/follow", async (req: Request, res: Response) => {
-    try {
-        const userId = authenticate(req)
-        const followUser = new FollowUserUC (
-            new UserDatabase(),
-        );
-
-        const input: FollowUserInput = {
-            followerId: userId,
-            followedId: req.body.userToFollow
-        }    
-
-        await followUser.execute(input)
-        res.status(200).send({
-            message: "Usuário seguido com sucesso!"
-        });
-    } catch (err) {
-        res.status(400).send({
-            errorMessage: err.message
-        })
-    }
-});
-
-app.delete("/users/unfollow", async (req: Request, res: Response) => {
-    try {
-        const userId = authenticate(req)
-        const unfollowUser = new UnfollowUserUC (
-            new UserDatabase(),
-        );
-
-        const input: UnfollowUserInput = {
-            followerId: userId,
-            followedId: req.body.userToUnfollow
-        }    
-
-        await unfollowUser.execute(input)
-        res.status(200).send({
-            message: "Usuário excluído da sua rede com sucesso!"
-        });
-    } catch (err) {
-        res.status(400).send({
-            errorMessage: err.message
-        })
-    }
-});
 
 export default app

@@ -10,7 +10,10 @@ export class GetAllUsersUC {
             users: users.map(user => ({
                 id: user.getId(),
                 name: user.getName(),
-                email: user.getEmail()
+                email: user.getEmail(),
+                birthdate: user.getBirthdate(),
+                age: user.getAge(),
+                photo: user.getPhoto()
             }))
         }
     }
@@ -23,5 +26,8 @@ interface GetAllUsersUCOutput {
 interface GetAllUsersofOutput {
     id: string,
     name: string,
-    email: string
+    email: string,
+    birthdate: Date,
+    age: string,
+    photo: string
 }

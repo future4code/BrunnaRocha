@@ -4,10 +4,10 @@ export abstract class BaseDatabase {
   protected connection = knex({
     client: "mysql",
     connection: {
-      host: 'ec2-18-229-236-15.sa-east-1.compute.amazonaws.com',
-      user: 'brunna',
-      password: 'f0938b7263c683db91a52018a6b038e8',
-      database: 'brunna' ,
+      host: 'ec2-100-26-186-8.compute-1.amazonaws.com',
+      user: 'BrunnaRocha17',
+      password: process.env.PASSWORD_DATABASE,
+      database: 'myprodastromatch' ,
       debug: true  
   }
   });

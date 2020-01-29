@@ -9,15 +9,15 @@ export class RegisterUserUC {
     constructor(
         private userGateway: UserGateway,
         private cryptoGateway: CryptoGateway,
-        private idGenerator: IdGeneratorGateway,
+        private idGeneratorGateway: IdGeneratorGateway,
         private auth: UserTokenGateway
     ) { }
 
     async execute(input: RegisterUserUCInput): Promise<string> {
         this.validateUserInput(input);
-        const id = this.idGenerator.generate();
+        const id = this.idGeneratorGateway.generateId();
         const password = await this.cryptoGateway.hash(input.password);
-        const user = new User(id, input.name, input.email, password);
+        const user = new User(id, password, input.name, input.email, input.birthdate, input.age, input.photo );
        
 
         await this.userGateway.createUser(user);
@@ -27,7 +27,7 @@ export class RegisterUserUC {
     }
 
     private validateUserInput(input: RegisterUserUCInput) {
-        if(!input.email || !input.password || !input.name){
+        if(!input.name || !input.email || !input.password || !input.birthdate || !input.age || !input.photo){
             throw new Error("Algum(s) campo(s) está(ão) inválido(s)!")
         }
     }
@@ -37,6 +37,9 @@ export interface RegisterUserUCInput {
     name: string;
     email: string;
     password: string;
+    birthdate: Date;
+    age: string;
+    photo: string;
 }
 
 export interface CreateUseUCOutput {
