@@ -3,7 +3,7 @@ import { IdGeneratorGateway } from '../gateways/IdGeneratorGateway'
 
 
 export class generateRandomId implements IdGeneratorGateway {
-    generate() {
+    generateId() {
         return v4();
     }
 }
