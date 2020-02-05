@@ -5,4 +5,4 @@ export const generateReducers = history =>
   combineReducers({
     router: connectRouter(history)
     // Outros reducers aqui
-});
+}); 
