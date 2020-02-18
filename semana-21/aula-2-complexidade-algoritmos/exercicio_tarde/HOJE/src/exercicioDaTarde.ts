@@ -43,7 +43,8 @@ export const func = (
   );
 };
 
-/* R: A complexidade é de */
+/* R: A complexidade é O(n), porque n é o tamanho da string,
+que é passada dentro do primeiro if */
 
 /* Exercício 3 */
 
