@@ -15,7 +15,8 @@ const findFirstRecurringCharacter = (input: string): string | null => {
   return null;
 };
 
-/* R: A complexidade é de */
+/* R: A complexidade é O(n), porque o n é o tamanho da string, 
+que é passada para o input como tipo e utilizada como parâmetro para a comparação da arrow function */
 
 /* Exercício 2 */
 
@@ -82,7 +83,7 @@ function verifyIfExistRepeatedNumbers(listOfNumbers: number[]): boolean {
 /* Coloque, em ordem de eficiência, os 4 algoritmos que você teve que calcular a complexidade */
 
 /* R: A ordem é a seguinte:
-      
+
 
 
 
