@@ -52,5 +52,5 @@ export const printArray = (arr: number[], i: number = arr.length - 1) => {
 };
 
 // Exemplo de uso:
-const array = [1, 2, 3, 4];
+const array = [1, 2, 3, 4, 5, 6];
 printArray(array);
